@@ -1,0 +1,154 @@
+<h:html xmlns="http://www.w3.org/2002/xforms" 
+	xmlns:h="http://www.w3.org/1999/xhtml" 
+	xmlns:ev="http://www.w3.org/2001/xml-events" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	xmlns:jr="http://openrosa.org/javarosa">
+  <h:head>
+    <h:title>Population Council Training</h:title>
+    <model>
+      <instance>
+	<!-- the XML inside here is what gets filled out and submitted when you complete the form -->
+        <PopCouncilTraining xmlns="PopCouncilTraining1">
+          <!-- Hidden Field for Form Version -->
+          <FormVersion>0.1</FormVersion>
+
+          <!-- Preloaded XForm Attributes -->
+          <StartTime/>
+          <EndTime/>
+          <SurveyDate/>
+          <DeviceID/>
+          <SubscriberID/>
+
+          <ClientName/>
+          <ClientNameAudio/>
+          <ClientAge/>
+          <ClientGender/>
+          <ClientPregnant/>
+          <ClientSpousePregnant/>
+
+          <ClientHobbies/>
+
+          <ClientLocation/>
+
+          <ClientPictures jr:template="">
+            <ClientPicture/>
+          </ClientPictures>                           
+
+        </PopCouncilTraining>
+      </instance>
+
+      <!-- binds allow us to add properties to the questions, like data types, skip logic, etc.-->
+      <bind nodeset="/PopCouncilTraining/StartTime" type="dateTime" jr:preload="timestamp" jr:preloadParams="start"/>
+      <bind nodeset="/PopCouncilTraining/EndTime" type="dateTime" jr:preload="timestamp" jr:preloadParams="end"/>
+      <bind nodeset="/PopCouncilTraining/SurveyDate" type="date" jr:preload="today" jr:preloadParams="end"/>
+      <bind nodeset="/PopCouncilTraining/DeviceID" type="string" jr:preload="property" jr:preloadParams="deviceid"/>
+      <bind nodeset="/PopCouncilTraining/SubscriberID" type="string" jr:preload="property" jr:preloadParams="subscriberid"/>
+
+      <bind nodeset="/PopCouncilTraining/ClientName" type="string" required="true()"/>
+      <bind nodeset="/PopCouncilTraining/ClientNameAudio" type="binary" required="true()"/>
+      <bind nodeset="/PopCouncilTraining/ClientAge" type="int" constraint=". &gt;= 0 and . &lt; 120" required="true()"/>
+      <bind nodeset="/PopCouncilTraining/ClientGender" required="true()"/>
+      <bind nodeset="/PopCouncilTraining/ClientPregnant" relevant="/PopCouncilTraining/ClientGender = 'F'"/>
+      <bind nodeset="/PopCouncilTraining/ClientSpousePregnant" relevant="/PopCouncilTraining/ClientGender = 'M'"/>
+
+      <bind nodeset="/PopCouncilTraining/ClientHobbies"/>
+
+      <bind nodeset="/PopCouncilTraining/ClientLocation" type="geopoint"/>
+      
+      <!-- Repeat for Pictures causes crash -->
+      <bind nodeset="/PopCouncilTraining/ClientPictures"/>
+      <bind nodeset="/PopCouncilTraining/ClientPictures/ClientPicture" type="binary"/>
+    </model>
+  </h:head>
+  <h:body>
+    <!-- This is where we define the questions that the user will fill out -->
+    <input ref="/PopCouncilTraining/ClientName">
+      <label>Client Name</label>
+      <hint>What is the Client's Name?</hint>
+    </input>    
+    <upload ref="/PopCouncilTraining/ClientNameAudio" mediatype="audio/*">
+      <label>Client Name Audio</label>
+      <hint>Please say the Client's Name?</hint>
+    </upload>   
+    <input ref="/PopCouncilTraining/ClientAge">
+      <label>Client Age</label>
+      <hint>What is the Age of the Client?</hint>
+    </input>
+
+    <select1 ref="/PopCouncilTraining/ClientGender">
+      <label>Client Gender</label>
+      <hint>What is the Gender of the Client?</hint>
+      <item>
+        <label>Female</label> 
+        <value>F</value> 
+      </item>
+      <item>
+        <label>Male</label> 
+        <value>M</value> 
+      </item>
+    </select1>
+    <select1 ref="/PopCouncilTraining/ClientPregnant">
+      <label>Pregnant</label>
+      <hint>Is the client pregant?</hint>
+      <item>
+        <label>Yes</label> 
+        <value>yes</value> 
+      </item>
+      <item>
+        <label>No</label> 
+        <value>no</value> 
+      </item>
+    </select1>    
+    <select1 ref="/PopCouncilTraining/ClientSpousePregnant">
+      <label>Pregnant Spouse</label>
+      <hint>Is the client's spouse pregnant?</hint>      
+      <item>
+        <label>Yes</label> 
+        <value>yes</value> 
+      </item>
+      <item>
+        <label>No</label> 
+        <value>no</value> 
+      </item>
+    </select1>
+    <select ref="/PopCouncilTraining/ClientHobbies">
+      <label>Hobbies</label>
+      <hint>What does the client like to do?</hint>
+      <item>
+        <label>Reading</label> 
+        <value>Reading</value> 
+      </item>
+      <item>
+        <label>Swimming</label> 
+        <value>Swimming</value> 
+      </item>
+      <item>
+        <label>Exercising</label> 
+        <value>Exercising</value> 
+      </item>
+      <item>
+        <label>Writing</label> 
+        <value>Writing</value> 
+      </item>
+      <item>
+        <label>Spending Time With Family</label> 
+        <value>Family</value> 
+      </item>
+    </select>
+    <input ref="/PopCouncilTraining/ClientLocation">
+      <label>GPS Location</label>
+      <hint>Take the GPS reading.</hint>
+    </input>
+
+    <!--Facility Pictures Repeat -->
+    <group>
+      <label>Client Pictures</label>
+      
+      <repeat nodeset="/PopCouncilTraining/ClientPictures">
+        <upload ref="/PopCouncilTraining/ClientPictures/ClientPicture" mediatype="image/*">
+          <label>Take several pictures of the client.</label>
+        </upload>
+      </repeat>
+    </group>
+  </h:body>
+</h:html>

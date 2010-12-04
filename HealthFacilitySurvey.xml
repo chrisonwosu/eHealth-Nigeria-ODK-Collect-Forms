@@ -1,0 +1,464 @@
+<h:html xmlns="http://www.w3.org/2002/xforms" 
+	xmlns:h="http://www.w3.org/1999/xhtml" 
+	xmlns:ev="http://www.w3.org/2001/xml-events" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	xmlns:jr="http://openrosa.org/javarosa">
+  <h:head>
+    <h:title>Health Facility Survey</h:title>
+    <model>
+      <instance>
+	<!-- the XML inside here is what gets filled out and submitted when you complete the form -->
+        <HealthFacilitySurvey xmlns="HealthFacilitySurvey1">
+          <!-- Hidden Field for Form Version -->
+          <FormVersion>0.2</FormVersion>
+
+          <!-- Preloaded XForm Attributes -->
+          <StartTime/>
+          <EndTime/>
+          <SurveyDate/>
+          <DeviceID/>
+          <SubscriberID/>
+
+          <FacilityName/>
+          <FacilityCode/>
+
+          <FacilityLGA/>
+          <FacilityLGAWard/>
+          <FacilityGPS/>
+
+          <FacilityPictures jr:template="">
+            <FacilityPicture/>
+          </FacilityPictures>                           
+
+          <FacilityCommunitiesServed/>
+          <FacilityBeds/>
+
+          <FacilityTypePublic/>
+          <FacilityTypeLevel/>
+          <FacilitySpecialty/>
+          <FacilityNHIS/>
+          <FacilityServices/>
+        </HealthFacilitySurvey>
+      </instance>
+
+      <!-- binds allow us to add properties to the questions, like data types, skip logic, etc.-->
+      <bind nodeset="/HealthFacilitySurvey/StartTime" type="dateTime" jr:preload="timestamp" jr:preloadParams="start"/>
+      <bind nodeset="/HealthFacilitySurvey/EndTime" type="dateTime" jr:preload="timestamp" jr:preloadParams="end"/>
+      <bind nodeset="/HealthFacilitySurvey/SurveyDate" type="date" jr:preload="today" jr:preloadParams="end"/>
+      <bind nodeset="/HealthFacilitySurvey/DeviceID" type="string" jr:preload="property" jr:preloadParams="deviceid"/>
+      <bind nodeset="/HealthFacilitySurvey/SubscriberID" type="string" jr:preload="property" jr:preloadParams="subscriberid"/>
+
+      <bind nodeset="/HealthFacilitySurvey/FacilityName" type="string" required="true()"/>
+      <bind nodeset="/HealthFacilitySurvey/FacilityCode" type="string"/>
+
+      <bind nodeset="/HealthFacilitySurvey/FacilityLGA" required="true()"/>
+      <bind nodeset="/HealthFacilitySurvey/FacilityLGAWard" type="string"/>
+      <bind nodeset="/HealthFacilitySurvey/FacilityGPS" type="geopoint"/>
+      
+      <!-- Repeat for Pictures causes crash -->
+      <bind nodeset="/HealthFacilitySurvey/FacilityPictures"/>
+      <bind nodeset="/HealthFacilitySurvey/FacilityPictures/FacilityPicture" type="binary"/>
+
+      <bind nodeset="/HealthFacilitySurvey/FacilityCommunitiesServed" type="int"/>
+      <bind nodeset="/HealthFacilitySurvey/FacilityBeds" type="int"/>
+
+      <bind nodeset="/HealthFacilitySurvey/FacilityTypePublic"/>
+      <bind nodeset="/HealthFacilitySurvey/FacilityTypeLevel"/>
+      <bind nodeset="/HealthFacilitySurvey/FacilitySpecialty" type="string" relevant="/HealthFacilitySurvey/FacilityTypeLevel = 'specialist'"/>
+      <bind nodeset="/HealthFacilitySurvey/FacilityNHIS"/>
+      <bind nodeset="/HealthFacilitySurvey/FacilityServices"/>
+    </model>
+  </h:head>
+  <h:body>
+    <!-- This is where we define the questions that the user will fill out -->
+    <input ref="/HealthFacilitySurvey/FacilityName">
+      <label>Facility Name</label>
+      <hint>What is the Facilities Official Name?</hint>
+    </input>
+    <input ref="/HealthFacilitySurvey/FacilityCode">
+      <label>Facility Code</label>
+      <hint>What is the Facility Code used in NHMIS reporting?</hint>
+    </input>
+
+    <select1 ref="/HealthFacilitySurvey/FacilityLGA">
+      <label>Local Government Area (LGA)</label>
+      <hint>In which LGA is the Facility located?</hint>
+      <item>
+        <label>Ajingi</label> 
+        <value>Ajingi</value> 
+      </item>
+      <item>
+        <label>Albasu</label> 
+        <value>Albasu</value> 
+      </item>
+      <item>
+        <label>Bagwai</label> 
+        <value>Bagwai</value> 
+      </item>
+      <item>
+        <label>Bebeji</label> 
+        <value>Bebeji</value> 
+      </item>
+      <item>
+        <label>Bichi</label> 
+        <value>Bichi</value> 
+      </item>
+      <item>
+        <label>Bunkure</label> 
+        <value>Bunkure</value> 
+      </item>
+      <item>
+        <label>Dala</label> 
+        <value>Dala</value> 
+      </item>
+      <item>
+        <label>Dambatta</label> 
+        <value>Dambatta</value> 
+      </item>
+      <item>
+        <label>Dawakin Kudu</label> 
+        <value>Dawakin Kudu</value> 
+      </item>
+      <item>
+        <label>Dawakin Tofa</label> 
+        <value>Dawakin Tofa</value> 
+      </item>
+      <item>
+        <label>Doguwa</label> 
+        <value>Doguwa</value> 
+      </item>
+      <item>
+        <label>Fagge</label> 
+        <value>Fagge</value> 
+      </item>
+      <item>
+        <label>Gabasawa</label> 
+        <value>Gabasawa</value> 
+      </item>
+      <item>
+        <label>Garko</label> 
+        <value>Garko</value> 
+      </item>
+      <item>
+        <label>Garum Mallam</label> 
+        <value>Garum Mallam</value> 
+      </item>
+      <item>
+        <label>Gaya</label> 
+        <value>Gaya</value> 
+      </item>
+      <item>
+        <label>Gezawa</label> 
+        <value>Gezawa</value> 
+      </item>
+      <item>
+        <label>Gwale</label> 
+        <value>Gwale</value> 
+      </item>
+      <item>
+        <label>Gwarzo</label> 
+        <value>Gwarzo</value> 
+      </item>
+      <item>
+        <label>Kabo</label> 
+        <value>Kabo</value> 
+      </item>
+      <item>
+        <label>Kano Municipal</label> 
+        <value>Kano Municipal</value> 
+      </item>
+      <item>
+        <label>Karaye</label> 
+        <value>Karaye</value> 
+      </item>
+      <item>
+        <label>Kibiya</label> 
+        <value>Kibiya</value> 
+      </item>
+      <item>
+        <label>Kiru</label> 
+        <value>Kiru</value> 
+      </item>
+      <item>
+        <label>Kumbotso</label> 
+        <value>Kumbotso</value> 
+      </item>
+      <item>
+        <label>Kunchi</label> 
+        <value>Kunchi</value> 
+      </item>
+      <item>
+        <label>Kura</label> 
+        <value>Kura</value> 
+      </item>
+      <item>
+        <label>Madobi</label> 
+        <value>Madobi</value> 
+      </item>
+      <item>
+        <label>Makoda</label> 
+        <value>Makoda</value> 
+      </item>
+      <item>
+        <label>Minjibir</label> 
+        <value>Minjibir</value> 
+      </item>
+      <item>
+        <label>Nasarawa</label> 
+        <value>Nasarawa</value> 
+      </item>
+      <item>
+        <label>Rano</label> 
+        <value>Rano</value> 
+      </item>
+      <item>
+        <label>Rimin Gado</label> 
+        <value>Rimin Gado</value> 
+      </item>
+      <item>
+        <label>Rogo</label> 
+        <value>Rogo</value> 
+      </item>
+      <item>
+        <label>Shanono</label> 
+        <value>Shanono</value> 
+      </item>
+      <item>
+        <label>Sumaila</label> 
+        <value>Sumaila</value> 
+      </item>
+      <item>
+        <label>Takali</label> 
+        <value>Takali</value> 
+      </item>
+      <item>
+        <label>Tarauni</label> 
+        <value>Tarauni</value> 
+      </item>
+      <item>
+        <label>Tofa</label> 
+        <value>Tofa</value> 
+      </item>
+      <item>
+        <label>Tsanyawa</label> 
+        <value>Tsanyawa</value> 
+      </item>
+      <item>
+        <label>Tudun Wada</label> 
+        <value>Tudun Wada</value> 
+      </item>
+      <item>
+        <label>Ungogo</label> 
+        <value>Ungogo</value> 
+      </item>
+      <item>
+        <label>Warawa</label> 
+        <value>Warawa</value> 
+      </item>
+      <item>
+        <label>Wudil</label> 
+        <value>Wudil</value> 
+      </item>
+    </select1>
+    <input ref="/HealthFacilitySurvey/FacilityLGAWard">
+      <label>Ward</label>
+      <hint>In which WARD is the Facility located?</hint>
+    </input>
+    <input ref="/HealthFacilitySurvey/FacilityGPS">
+      <label>GPS Location</label>
+      <hint>Take the GPS reading from the front entrance of the facility</hint>
+    </input>
+
+    <!--Facility Pictures Repeat -->
+    <group>
+      <label>Facility Pictures</label>
+      
+      <repeat nodeset="/HealthFacilitySurvey/FacilityPictures">
+        <upload ref="/HealthFacilitySurvey/FacilityPictures/FacilityPicture" mediatype="image/*">
+          <label>Take several pictures of the facility.</label>
+        </upload>
+      </repeat>
+    </group>
+
+    <input ref="/HealthFacilitySurvey/FacilityCommunitiesServed">
+      <label>Communities Served</label>
+      <hint>How many communities does this facility serve?</hint>
+    </input>
+    <input ref="/HealthFacilitySurvey/FacilityBeds">
+      <label>Number of Beds</label>
+      <hint>How many beds at this facility? (ie inpatient capacity)</hint>
+    </input>
+
+    <select1 ref="/HealthFacilitySurvey/FacilityTypePublic">
+      <label>Public or Private</label>
+      <hint>Is this facility Public (government run) or Private?</hint>
+      <item>
+        <label>Public</label>
+        <value>public</value>
+      </item>
+      <item>
+        <label>Private</label>
+        <value>private</value>
+      </item>
+    </select1>
+    <select1 ref="/HealthFacilitySurvey/FacilityTypeLevel">
+      <label>Level of Facility</label>
+      <item>
+        <label>Primary</label>
+        <value>primary</value>
+      </item>
+      <item>
+        <label>Secondary</label>
+        <value>secondary</value>
+      </item>
+      <item>
+        <label>Specialist</label>
+        <value>specialist</value>
+      </item>
+      <item>
+        <label>Tertiary</label>
+        <value>tertiary</value>
+      </item>
+    </select1>
+    <input ref="/HealthFacilitySurvey/FacilitySpecialty">
+      <label>Facility Speciality</label>
+      <hint>If a Specialist Facility, What Kind?</hint>
+    </input>
+    <select1 ref="/HealthFacilitySurvey/FacilityNHIS">
+      <label>Is this an NHIS Facility?</label>
+      <hint>Does the facility have National Health Insurance Scheme (NHIS) enrolees?</hint>    
+      <item> 
+        <label>Yes</label>
+        <value>1</value>
+      </item>    
+      <item> 
+        <label>No</label>
+        <value>0</value>
+      </item>    
+    </select1>
+    <select ref="/HealthFacilitySurvey/FacilityServices">
+      <label>Services Provided</label>
+      <hint>What Services are Provided at Facility?</hint>
+      <item> 
+        <label>Antenatal</label>
+        <value>Antenatal</value>
+      </item>
+      <item> 
+        <label>Labour and Delivery</label>
+        <value>Labour_Delivery</value>
+      </item>
+      <item> 
+        <label>Vaginal Delivery</label>
+        <value>Vaginal_Delivery</value>
+      </item>
+      <item> 
+        <label>Caesarean</label>
+        <value>Caesarean</value>
+      </item>
+      <item> 
+        <label>Routine Immunizations</label>
+        <value>Routine_Immunizations</value>
+      </item>
+      <item> 
+        <label>Child Health and Nutrition (Growth Monitoring and Promotion)</label>
+        <value>Child_Health</value>
+      </item>
+      <item> 
+        <label>HIV/AIDS: VCT</label>
+        <value>VCT</value>
+      </item>
+      <item> 
+        <label>HIV/AIDS: PMTCT</label>
+        <value>PMTCT</value>
+      </item>
+      <item> 
+        <label>HIV/AIDS: ART</label>
+        <value>ART</value>
+      </item>
+      <item> 
+        <label>TB Testing</label>
+        <value>TB_Testing</value>
+      </item>
+      <item> 
+        <label>TB Drug Therapy</label>
+        <value>TB_Drug_Therapy</value>
+      </item>
+      <item> 
+        <label>Family Planning Counseling</label>
+        <value>Family_Planning_Counseling</value>
+      </item>
+      <item> 
+        <label>STI Testing</label>
+        <value>STI_Testing</value>
+      </item>
+      <item> 
+        <label>STI Treatment</label>
+        <value>STI_Treatment</value>
+      </item>
+      <item> 
+        <label>Contraceptive Dispersal</label>
+        <value>Contraceptive_Dispersal</value>
+      </item>
+      <item> 
+        <label>Abortion</label>
+        <value>Abortion</value>
+      </item>
+      <item> 
+        <label>Inpatient</label>
+        <value>Inpatient</value>
+      </item>
+      <item> 
+        <label>Outpatient</label>
+        <value>Outpatient</value>
+      </item>
+      <item> 
+        <label>Occupational Health</label>
+        <value>Occupational_Health</value>
+      </item>
+      <item> 
+        <label>Surgery</label>
+        <value>Surgery</value>
+      </item>
+      <item> 
+        <label>Radiology</label>
+        <value>Radiology</value>
+      </item>
+      <item> 
+        <label>Malaria Control</label>
+        <value>Malaria_Control</value>
+      </item>
+      <item> 
+        <label>Pharmacy</label>
+        <value>Pharmacy</value>
+      </item>
+      <item> 
+        <label>Laboratory</label>
+        <value>Laboratory</value>
+      </item>
+      <item> 
+        <label>Blood Screening</label>
+        <value>Blood_Screening</value>
+      </item>
+      <item> 
+        <label>Minimum Health Care Package</label>
+        <value>Minimum_Health_Care_Package</value>
+      </item>
+      <item> 
+        <label>Immediate Disease Reporting</label>
+        <value>Immediate_Disease_Reporting</value>
+      </item>
+      <item> 
+        <label>Routine Disease Reporting</label>
+        <value>Routine_Disease_Reporting</value>
+      </item>
+      <item> 
+        <label>Referrals</label>
+        <value>Referrals</value>
+      </item>
+      <item> 
+        <label>Dental</label>
+        <value>Dental</value>
+      </item>
+    </select>
+  </h:body>
+</h:html>
