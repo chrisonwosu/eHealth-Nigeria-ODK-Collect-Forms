@@ -10,7 +10,7 @@
 	<!-- the XML inside here is what gets filled out and submitted when you complete the form -->
         <PopCouncilTraining xmlns="PopCouncilTraining1">
           <!-- Hidden Field for Form Version -->
-          <FormVersion>0.1</FormVersion>
+          <FormVersion>0.2</FormVersion>
 
           <!-- Preloaded XForm Attributes -->
           <StartTime/>
@@ -30,6 +30,7 @@
 
           <ClientLocation/>
 
+          <ClientMainPicture/>
           <ClientPictures jr:template="">
             <ClientPicture/>
           </ClientPictures>                           
@@ -55,7 +56,7 @@
 
       <bind nodeset="/PopCouncilTraining/ClientLocation" type="geopoint"/>
       
-      <!-- Repeat for Pictures causes crash -->
+      <bind nodeset="/PopCouncilTraining/ClientMainPicture" type="binary"/>
       <bind nodeset="/PopCouncilTraining/ClientPictures"/>
       <bind nodeset="/PopCouncilTraining/ClientPictures/ClientPicture" type="binary"/>
     </model>
@@ -141,12 +142,15 @@
     </input>
 
     <!--Facility Pictures Repeat -->
+    <upload ref="/PopCouncilTraining/ClientMainPicture" mediatype="image/*">
+      <label>Take the main picture of the client.</label>
+    </upload>
     <group>
-      <label>Client Pictures</label>
+      <label>Other Client Pictures</label>
       
       <repeat nodeset="/PopCouncilTraining/ClientPictures">
         <upload ref="/PopCouncilTraining/ClientPictures/ClientPicture" mediatype="image/*">
-          <label>Take several pictures of the client.</label>
+          <label>Take several other pictures of the client.</label>
         </upload>
       </repeat>
     </group>
