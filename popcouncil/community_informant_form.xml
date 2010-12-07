@@ -1,0 +1,2203 @@
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa">
+  <h:head>
+    <h:title>Untitled Form</h:title>
+    <model>
+      <instance>
+        <data id="build_Untitled-Form_1291564972">
+          <VenueName/>
+          <VenueLocation/>
+          <gpslocation/>
+          <operation/>
+          <activities/>
+          <druguse/>
+          <sexbehavior/>
+          <socializelocal/>
+          <busytimes/>
+          <busyday/>
+          <busytime/>
+          <busyday2/>
+          <busytime2/>
+          <nopeople/>
+          <nosocialize/>
+          <mensocial/>
+          <womensocial/>
+          <comefrom/>
+          <fppa/>
+          <fstudent/>
+          <funemployed/>
+          <funiversity/>
+          <f18/>
+          <fwalk/>
+          <fonceaweek/>
+          <foutside/>
+          <fdrink/>
+          <fsex/>
+          <fdrugs/>
+          <fbuysex/>
+          <mppa/>
+          <mstudents/>
+          <munemployed/>
+          <muniversity/>
+          <m18/>
+          <mwalk/>
+          <monceaweek/>
+          <moutside/>
+          <mdrink/>
+          <msex/>
+          <mdrugs/>
+          <mbuysex/>
+          <motherlocal/>
+          <fotherlocals/>
+          <nameotherlocal/>
+          <otherlocal/>
+          <othertype/>
+          <other/>
+        </data>
+      </instance>
+      <itext>
+        <translation lang="eng">
+          <text id="/data/VenueName:label">
+            <value>Venue Name</value>
+          </text>
+          <text id="/data/VenueName:hint">
+            <value></value>
+          </text>
+          <text id="/data/VenueLocation:label">
+            <value>Venue Location</value>
+          </text>
+          <text id="/data/VenueLocation:hint">
+            <value/>
+          </text>
+          <text id="/data/gpslocation:label">
+            <value>GPS Location of Venue</value>
+          </text>
+          <text id="/data/gpslocation:hint">
+            <value></value>
+          </text>
+          <text id="/data/operation:label">
+            <value>How many years has this venue been in operation?</value>
+          </text>
+          <text id="/data/operation:hint">
+            <value/>
+          </text>
+          <text id="/data/operation:option0">
+            <value>< 1 Year</value>
+          </text>
+          <text id="/data/operation:option1">
+            <value>1-2 Years</value>
+          </text>
+          <text id="/data/operation:option2">
+            <value>More than 2 Years</value>
+          </text>
+          <text id="/data/operation:option3">
+            <value>Not applicable</value>
+          </text>
+          <text id="/data/operation:option4">
+            <value>Do not know</value>
+          </text>
+          <text id="/data/activities:label">
+            <value>What types of activities take place here?</value>
+          </text>
+          <text id="/data/activities:hint">
+            <value/>
+          </text>
+          <text id="/data/activities:option0">
+            <value>People buy food and eat</value>
+          </text>
+          <text id="/data/activities:option1">
+            <value>People socialize for an hour or more</value>
+          </text>
+          <text id="/data/activities:option2">
+            <value>People can buy beer/alcohol to consume on-site</value>
+          </text>
+          <text id="/data/activities:option3">
+            <value>People bring alcohol/beer to consume</value>
+          </text>
+          <text id="/data/activities:option4">
+            <value>TV viewing</value>
+          </text>
+          <text id="/data/activities:option5">
+            <value>VCR or CD video viewing</value>
+          </text>
+          <text id="/data/activities:option6">
+            <value>People sell and buy drugs</value>
+          </text>
+          <text id="/data/activities:option7">
+            <value>Individual/group or couple dancing</value>
+          </text>
+          <text id="/data/activities:option8">
+            <value>Exotic or go-go dancing</value>
+          </text>
+          <text id="/data/activities:option9">
+            <value>Live music</value>
+          </text>
+          <text id="/data/activities:option10">
+            <value>People buy and use drugs on-site</value>
+          </text>
+          <text id="/data/activities:option11">
+            <value>Live DJ</value>
+          </text>
+          <text id="/data/activities:option12">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/druguse:label">
+            <value>Have you seen used syringes, foils and drug apparatus/equipments lying around, inside or outside of this place in the past 3 months?</value>
+          </text>
+          <text id="/data/druguse:hint">
+            <value/>
+          </text>
+          <text id="/data/druguse:option0">
+            <value>Yes</value>
+          </text>
+          <text id="/data/druguse:option1">
+            <value>No</value>
+          </text>
+          <text id="/data/druguse:option2">
+            <value>Don't Know</value>
+          </text>
+          <text id="/data/sexbehavior:label">
+            <value>Do people meet sexual partners here? In your opinion....</value>
+          </text>
+          <text id="/data/sexbehavior:hint">
+            <value/>
+          </text>
+          <text id="/data/sexbehavior:option0">
+            <value>People do not meet sexual partners here</value>
+          </text>
+          <text id="/data/sexbehavior:option1">
+            <value>Men meet new female sexual partners here</value>
+          </text>
+          <text id="/data/sexbehavior:option2">
+            <value>Women meet new sexual partners here</value>
+          </text>
+          <text id="/data/sexbehavior:option3">
+            <value>Men meet male (gay) sexual partners here</value>
+          </text>
+          <text id="/data/sexbehavior:option4">
+            <value>Someone on-site helps partners hook up/link up</value>
+          </text>
+          <text id="/data/sexbehavior:option5">
+            <value>Female sex workers solicit customers</value>
+          </text>
+          <text id="/data/sexbehavior:option6">
+            <value>People have sex here at the venue</value>
+          </text>
+          <text id="/data/socializelocal:label">
+            <value>Where do people socialize here?</value>
+          </text>
+          <text id="/data/socializelocal:hint">
+            <value/>
+          </text>
+          <text id="/data/socializelocal:option0">
+            <value>Only Indoors</value>
+          </text>
+          <text id="/data/socializelocal:option1">
+            <value>Only Outdoors</value>
+          </text>
+          <text id="/data/socializelocal:option2">
+            <value>Both Indoors and Outdoors</value>
+          </text>
+          <text id="/data/socializelocal:option3">
+            <value>Neither indoors or outdoors</value>
+          </text>
+          <text id="/data/socializelocal:option4">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/busytimes:label">
+            <value>What are the busiest times of the year here at this venue?</value>
+          </text>
+          <text id="/data/busytimes:hint">
+            <value/>
+          </text>
+          <text id="/data/busytimes:option0">
+            <value>School holidays</value>
+          </text>
+          <text id="/data/busytimes:option1">
+            <value>Public holidays</value>
+          </text>
+          <text id="/data/busytimes:option2">
+            <value>End of the month</value>
+          </text>
+          <text id="/data/busytimes:option3">
+            <value>Now is the busiest time of the year</value>
+          </text>
+          <text id="/data/busytimes:option4">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/busyday:label">
+            <value>Which day of the week is the busiest?</value>
+          </text>
+          <text id="/data/busyday:hint">
+            <value/>
+          </text>
+          <text id="/data/busyday:option0">
+            <value>Monday</value>
+          </text>
+          <text id="/data/busyday:option1">
+            <value>Tuesday</value>
+          </text>
+          <text id="/data/busyday:option2">
+            <value>Wednesday</value>
+          </text>
+          <text id="/data/busyday:option3">
+            <value>Thursday</value>
+          </text>
+          <text id="/data/busyday:option4">
+            <value>Friday</value>
+          </text>
+          <text id="/data/busyday:option5">
+            <value>Saturday</value>
+          </text>
+          <text id="/data/busyday:option6">
+            <value>Sunday</value>
+          </text>
+          <text id="/data/busyday:option7">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/busytime:label">
+            <value>On the busiest day of the week, when is the busiest time of the day for people to socialize</value>
+          </text>
+          <text id="/data/busytime:hint">
+            <value/>
+          </text>
+          <text id="/data/busytime:option0">
+            <value>Morning: 6am - Noon</value>
+          </text>
+          <text id="/data/busytime:option1">
+            <value>Afternoon: Noon - 6pm</value>
+          </text>
+          <text id="/data/busytime:option2">
+            <value>Evening: 6pm - 10pm</value>
+          </text>
+          <text id="/data/busytime:option3">
+            <value>Late night: 10pm - 6am</value>
+          </text>
+          <text id="/data/busytime:option4">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/busyday2:label">
+            <value>Which day is the second busiest?</value>
+          </text>
+          <text id="/data/busyday2:hint">
+            <value/>
+          </text>
+          <text id="/data/busyday2:option0">
+            <value>Monday</value>
+          </text>
+          <text id="/data/busyday2:option1">
+            <value>Tuesday</value>
+          </text>
+          <text id="/data/busyday2:option2">
+            <value>Wednesday</value>
+          </text>
+          <text id="/data/busyday2:option3">
+            <value>Thursday</value>
+          </text>
+          <text id="/data/busyday2:option4">
+            <value>Friday</value>
+          </text>
+          <text id="/data/busyday2:option5">
+            <value>Saturday</value>
+          </text>
+          <text id="/data/busyday2:option6">
+            <value>Sunday</value>
+          </text>
+          <text id="/data/busyday2:option7">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/busytime2:label">
+            <value>On the second busiest day of the week, when is the busiest time of the day for people to socialize?</value>
+          </text>
+          <text id="/data/busytime2:hint">
+            <value/>
+          </text>
+          <text id="/data/busytime2:option0">
+            <value>Morning: 6am - Noon</value>
+          </text>
+          <text id="/data/busytime2:option1">
+            <value>Afternoon: Noon - 6pm</value>
+          </text>
+          <text id="/data/busytime2:option2">
+            <value>Evening: 6pm - 10pm</value>
+          </text>
+          <text id="/data/busytime2:option3">
+            <value>Late evening: 10pm - 6am</value>
+          </text>
+          <text id="/data/nopeople:label">
+            <value>Approximately how many people (men and women) are here on the BUSIEST DAY at the BUSIEST TIME? </value>
+          </text>
+          <text id="/data/nopeople:hint">
+            <value>This includes people who come here to socialize and people who come here for other reasons.</value>
+          </text>
+          <text id="/data/nopeople:option0">
+            <value><10</value>
+          </text>
+          <text id="/data/nopeople:option1">
+            <value>11-25</value>
+          </text>
+          <text id="/data/nopeople:option2">
+            <value>26-50</value>
+          </text>
+          <text id="/data/nopeople:option3">
+            <value>51-100</value>
+          </text>
+          <text id="/data/nopeople:option4">
+            <value>101-150</value>
+          </text>
+          <text id="/data/nopeople:option5">
+            <value>151-200</value>
+          </text>
+          <text id="/data/nopeople:option6">
+            <value>201-250</value>
+          </text>
+          <text id="/data/nopeople:option7">
+            <value>251-300</value>
+          </text>
+          <text id="/data/nopeople:option8">
+            <value>301-350</value>
+          </text>
+          <text id="/data/nopeople:option9">
+            <value>351-400</value>
+          </text>
+          <text id="/data/nopeople:option10">
+            <value>401-450</value>
+          </text>
+          <text id="/data/nopeople:option11">
+            <value>451-500</value>
+          </text>
+          <text id="/data/nopeople:option12">
+            <value>501-600</value>
+          </text>
+          <text id="/data/nopeople:option13">
+            <value>>600</value>
+          </text>
+          <text id="/data/nopeople:option14">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/nosocialize:label">
+            <value>Of these, approximately how many are socializing some or all of the time they are here?</value>
+          </text>
+          <text id="/data/nosocialize:hint">
+            <value/>
+          </text>
+          <text id="/data/nosocialize:option0">
+            <value>1-25</value>
+          </text>
+          <text id="/data/nosocialize:option1">
+            <value>26-75</value>
+          </text>
+          <text id="/data/nosocialize:option2">
+            <value>76-125</value>
+          </text>
+          <text id="/data/nosocialize:option3">
+            <value>126-175</value>
+          </text>
+          <text id="/data/nosocialize:option4">
+            <value>176-275</value>
+          </text>
+          <text id="/data/nosocialize:option5">
+            <value>276-475</value>
+          </text>
+          <text id="/data/nosocialize:option6">
+            <value>476-675</value>
+          </text>
+          <text id="/data/nosocialize:option7">
+            <value>>675</value>
+          </text>
+          <text id="/data/nosocialize:option8">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/mensocial:label">
+            <value>Of those socializing, how many are men?</value>
+          </text>
+          <text id="/data/mensocial:hint">
+            <value/>
+          </text>
+          <text id="/data/womensocial:label">
+            <value>Of those socializing, how many are women?</value>
+          </text>
+          <text id="/data/womensocial:hint">
+            <value/>
+          </text>
+          <text id="/data/comefrom:label">
+            <value>Where do most of the people who come here to socialize come from?</value>
+          </text>
+          <text id="/data/comefrom:hint">
+            <value/>
+          </text>
+          <text id="/data/comefrom:option0">
+            <value>This state</value>
+          </text>
+          <text id="/data/comefrom:option1">
+            <value>This local government</value>
+          </text>
+          <text id="/data/comefrom:option2">
+            <value>Outside the state</value>
+          </text>
+          <text id="/data/comefrom:option3">
+            <value>Outside the local government</value>
+          </text>
+          <text id="/data/comefrom:option4">
+            <value>Elsewhere in country</value>
+          </text>
+          <text id="/data/comefrom:option5">
+            <value>Outside this country</value>
+          </text>
+          <text id="/data/comefrom:option6">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/fppa:label">
+            <value>How many women who come here during the busiest times live in this PPA?</value>
+          </text>
+          <text id="/data/fppa:hint">
+            <value/>
+          </text>
+          <text id="/data/fppa:option0">
+            <value>None</value>
+          </text>
+          <text id="/data/fppa:option1">
+            <value>Less than half</value>
+          </text>
+          <text id="/data/fppa:option2">
+            <value>Greater than or equal to half</value>
+          </text>
+          <text id="/data/fppa:option3">
+            <value>All</value>
+          </text>
+          <text id="/data/fppa:option4">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/fstudent:label">
+            <value>How many women who come here during the busiest times are secondary or high school students?</value>
+          </text>
+          <text id="/data/fstudent:hint">
+            <value/>
+          </text>
+          <text id="/data/fstudent:option0">
+            <value>None</value>
+          </text>
+          <text id="/data/fstudent:option1">
+            <value>Less than half</value>
+          </text>
+          <text id="/data/fstudent:option2">
+            <value>Greater than or equal to half</value>
+          </text>
+          <text id="/data/fstudent:option3">
+            <value>All</value>
+          </text>
+          <text id="/data/fstudent:option4">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/funemployed:label">
+            <value>How many women who come here during the busiest times are unemployed?</value>
+          </text>
+          <text id="/data/funemployed:hint">
+            <value/>
+          </text>
+          <text id="/data/funemployed:option0">
+            <value>None</value>
+          </text>
+          <text id="/data/funemployed:option1">
+            <value>Less than half</value>
+          </text>
+          <text id="/data/funemployed:option2">
+            <value>Greater than or equal to half</value>
+          </text>
+          <text id="/data/funemployed:option3">
+            <value>All</value>
+          </text>
+          <text id="/data/funemployed:option4">
+            <value>Don't Know</value>
+          </text>
+          <text id="/data/funiversity:label">
+            <value>How many women who come here during the busiest times are university/college students?</value>
+          </text>
+          <text id="/data/funiversity:hint">
+            <value></value>
+          </text>
+          <text id="/data/funiversity:option0">
+            <value>None</value>
+          </text>
+          <text id="/data/funiversity:option1">
+            <value>Less than half</value>
+          </text>
+          <text id="/data/funiversity:option2">
+            <value>Greater than or equal to half</value>
+          </text>
+          <text id="/data/funiversity:option3">
+            <value>All</value>
+          </text>
+          <text id="/data/funiversity:option4">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/f18:label">
+            <value>How many women who come here during the busiest times are less than age 18</value>
+          </text>
+          <text id="/data/f18:hint">
+            <value/>
+          </text>
+          <text id="/data/f18:option0">
+            <value>None</value>
+          </text>
+          <text id="/data/f18:option1">
+            <value>Less than half</value>
+          </text>
+          <text id="/data/f18:option2">
+            <value>Greater than or equal to half</value>
+          </text>
+          <text id="/data/f18:option3">
+            <value>All</value>
+          </text>
+          <text id="/data/f18:option4">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/fwalk:label">
+            <value>How many women who come here during the busiest times live within a 10-minute walk of here?</value>
+          </text>
+          <text id="/data/fwalk:hint">
+            <value/>
+          </text>
+          <text id="/data/fwalk:option0">
+            <value>None</value>
+          </text>
+          <text id="/data/fwalk:option1">
+            <value>Less than half</value>
+          </text>
+          <text id="/data/fwalk:option2">
+            <value>Greater than or equal to half</value>
+          </text>
+          <text id="/data/fwalk:option3">
+            <value>All</value>
+          </text>
+          <text id="/data/fwalk:option4">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/fonceaweek:label">
+            <value>How many women who come here during the busiest times come here at least once a week?</value>
+          </text>
+          <text id="/data/fonceaweek:hint">
+            <value/>
+          </text>
+          <text id="/data/fonceaweek:option0">
+            <value>None</value>
+          </text>
+          <text id="/data/fonceaweek:option1">
+            <value>Less than half</value>
+          </text>
+          <text id="/data/fonceaweek:option2">
+            <value>Greater than or equal to half</value>
+          </text>
+          <text id="/data/fonceaweek:option3">
+            <value>All</value>
+          </text>
+          <text id="/data/fonceaweek:option4">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/foutside:label">
+            <value>How many women who come here during the busiest times are from outside this district</value>
+          </text>
+          <text id="/data/foutside:hint">
+            <value/>
+          </text>
+          <text id="/data/foutside:option0">
+            <value>None</value>
+          </text>
+          <text id="/data/foutside:option1">
+            <value>Less than half</value>
+          </text>
+          <text id="/data/foutside:option2">
+            <value>Greater than or equal to half</value>
+          </text>
+          <text id="/data/foutside:option3">
+            <value>All</value>
+          </text>
+          <text id="/data/foutside:option4">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/fdrink:label">
+            <value>How many women who come here during the busiest times drink alcohol here?</value>
+          </text>
+          <text id="/data/fdrink:hint">
+            <value/>
+          </text>
+          <text id="/data/fdrink:option0">
+            <value>None</value>
+          </text>
+          <text id="/data/fdrink:option1">
+            <value>Less than half</value>
+          </text>
+          <text id="/data/fdrink:option2">
+            <value>Greater than or equal to half</value>
+          </text>
+          <text id="/data/fdrink:option3">
+            <value>All</value>
+          </text>
+          <text id="/data/fdrink:option4">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/fsex:label">
+            <value>How many women who come here during the busiest times find a new sexual partner here?</value>
+          </text>
+          <text id="/data/fsex:hint">
+            <value/>
+          </text>
+          <text id="/data/fsex:option0">
+            <value>None</value>
+          </text>
+          <text id="/data/fsex:option1">
+            <value>Less than half</value>
+          </text>
+          <text id="/data/fsex:option2">
+            <value>Greater than or equal to half</value>
+          </text>
+          <text id="/data/fsex:option3">
+            <value>All</value>
+          </text>
+          <text id="/data/fsex:option4">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/fdrugs:label">
+            <value>How many women who come here during the busiest times appear to be injecting, smoking, sniffing drug users</value>
+          </text>
+          <text id="/data/fdrugs:hint">
+            <value/>
+          </text>
+          <text id="/data/fdrugs:option0">
+            <value>None</value>
+          </text>
+          <text id="/data/fdrugs:option1">
+            <value>Less than half</value>
+          </text>
+          <text id="/data/fdrugs:option2">
+            <value>Greater than or equal to half</value>
+          </text>
+          <text id="/data/fdrugs:option3">
+            <value>All</value>
+          </text>
+          <text id="/data/fdrugs:option4">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/fbuysex:label">
+            <value>How many women who come here during the busiest times appear to be selling or buying sex?</value>
+          </text>
+          <text id="/data/fbuysex:hint">
+            <value/>
+          </text>
+          <text id="/data/fbuysex:option0">
+            <value>None</value>
+          </text>
+          <text id="/data/fbuysex:option1">
+            <value>Less than half</value>
+          </text>
+          <text id="/data/fbuysex:option2">
+            <value>Greater than or equal to half</value>
+          </text>
+          <text id="/data/fbuysex:option3">
+            <value>All</value>
+          </text>
+          <text id="/data/fbuysex:option4">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/mppa:label">
+            <value>How many men who come here during busiest times live in this PPA?</value>
+          </text>
+          <text id="/data/mppa:hint">
+            <value/>
+          </text>
+          <text id="/data/mppa:option0">
+            <value>None</value>
+          </text>
+          <text id="/data/mppa:option1">
+            <value>Less than half</value>
+          </text>
+          <text id="/data/mppa:option2">
+            <value>Greater than or equal to half</value>
+          </text>
+          <text id="/data/mppa:option3">
+            <value>All</value>
+          </text>
+          <text id="/data/mppa:option4">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/mstudents:label">
+            <value>How many men who come here during busiest times are secondary or high school students?</value>
+          </text>
+          <text id="/data/mstudents:hint">
+            <value/>
+          </text>
+          <text id="/data/mstudents:option0">
+            <value>None</value>
+          </text>
+          <text id="/data/mstudents:option1">
+            <value>Less than half</value>
+          </text>
+          <text id="/data/mstudents:option2">
+            <value>Greater than or equal to half</value>
+          </text>
+          <text id="/data/mstudents:option3">
+            <value>All</value>
+          </text>
+          <text id="/data/mstudents:option4">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/munemployed:label">
+            <value>How many men who come here during busiest times are unemployed?</value>
+          </text>
+          <text id="/data/munemployed:hint">
+            <value/>
+          </text>
+          <text id="/data/munemployed:option0">
+            <value>none</value>
+          </text>
+          <text id="/data/munemployed:option1">
+            <value>Less than half</value>
+          </text>
+          <text id="/data/munemployed:option2">
+            <value>Greater than or equal to half</value>
+          </text>
+          <text id="/data/munemployed:option3">
+            <value>All</value>
+          </text>
+          <text id="/data/munemployed:option4">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/muniversity:label">
+            <value>How many men who come here during busiest times</value>
+          </text>
+          <text id="/data/muniversity:hint">
+            <value/>
+          </text>
+          <text id="/data/muniversity:option0">
+            <value>None</value>
+          </text>
+          <text id="/data/muniversity:option1">
+            <value>Less than half</value>
+          </text>
+          <text id="/data/muniversity:option2">
+            <value>Greater than or equal to half</value>
+          </text>
+          <text id="/data/muniversity:option3">
+            <value>All</value>
+          </text>
+          <text id="/data/muniversity:option4">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/m18:label">
+            <value>How many men who come here during busiest times are less than age 18?</value>
+          </text>
+          <text id="/data/m18:hint">
+            <value/>
+          </text>
+          <text id="/data/m18:option0">
+            <value>None</value>
+          </text>
+          <text id="/data/m18:option1">
+            <value>Less than half</value>
+          </text>
+          <text id="/data/m18:option2">
+            <value>Greater than or equal to half</value>
+          </text>
+          <text id="/data/m18:option3">
+            <value>All</value>
+          </text>
+          <text id="/data/m18:option4">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/mwalk:label">
+            <value>How many men who come here during busiest times live within a 10-minute walk of here?</value>
+          </text>
+          <text id="/data/mwalk:hint">
+            <value/>
+          </text>
+          <text id="/data/mwalk:option0">
+            <value>None</value>
+          </text>
+          <text id="/data/mwalk:option1">
+            <value>Less than half</value>
+          </text>
+          <text id="/data/mwalk:option2">
+            <value>Greater than or equal to half</value>
+          </text>
+          <text id="/data/mwalk:option3">
+            <value>All</value>
+          </text>
+          <text id="/data/mwalk:option4">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/monceaweek:label">
+            <value>How many men who come here during busiest times come here at least once a week</value>
+          </text>
+          <text id="/data/monceaweek:hint">
+            <value/>
+          </text>
+          <text id="/data/monceaweek:option0">
+            <value>None</value>
+          </text>
+          <text id="/data/monceaweek:option1">
+            <value>Less than half</value>
+          </text>
+          <text id="/data/monceaweek:option2">
+            <value>Greater than or equal to half</value>
+          </text>
+          <text id="/data/monceaweek:option3">
+            <value>All</value>
+          </text>
+          <text id="/data/monceaweek:option4">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/moutside:label">
+            <value>How many men who come here during busiest times are from outside this district?</value>
+          </text>
+          <text id="/data/moutside:hint">
+            <value/>
+          </text>
+          <text id="/data/moutside:option0">
+            <value>None</value>
+          </text>
+          <text id="/data/moutside:option1">
+            <value>Less than half</value>
+          </text>
+          <text id="/data/moutside:option2">
+            <value>Greater than or equal to half</value>
+          </text>
+          <text id="/data/moutside:option3">
+            <value>All</value>
+          </text>
+          <text id="/data/moutside:option4">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/mdrink:label">
+            <value>How many men who come here during busiest times drink alcohol here?</value>
+          </text>
+          <text id="/data/mdrink:hint">
+            <value/>
+          </text>
+          <text id="/data/mdrink:option0">
+            <value>None</value>
+          </text>
+          <text id="/data/mdrink:option1">
+            <value>Less than half</value>
+          </text>
+          <text id="/data/mdrink:option2">
+            <value>Greater than or equal to half</value>
+          </text>
+          <text id="/data/mdrink:option3">
+            <value>All</value>
+          </text>
+          <text id="/data/mdrink:option4">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/msex:label">
+            <value>How many men who come here during busiest times find a new sexual partner here</value>
+          </text>
+          <text id="/data/msex:hint">
+            <value/>
+          </text>
+          <text id="/data/msex:option0">
+            <value>None</value>
+          </text>
+          <text id="/data/msex:option1">
+            <value>Less than half</value>
+          </text>
+          <text id="/data/msex:option2">
+            <value>Greater than or equal to half</value>
+          </text>
+          <text id="/data/msex:option3">
+            <value>All</value>
+          </text>
+          <text id="/data/msex:option4">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/mdrugs:label">
+            <value>How many men who come here during busiest times appear to be injecting, smoking, sniffing drug users?</value>
+          </text>
+          <text id="/data/mdrugs:hint">
+            <value/>
+          </text>
+          <text id="/data/mdrugs:option0">
+            <value>None</value>
+          </text>
+          <text id="/data/mdrugs:option1">
+            <value>Less than half</value>
+          </text>
+          <text id="/data/mdrugs:option2">
+            <value>Greater than or equal to half</value>
+          </text>
+          <text id="/data/mdrugs:option3">
+            <value>All</value>
+          </text>
+          <text id="/data/mdrugs:option4">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/mbuysex:label">
+            <value>How many men who come here during busiest times appear to be selling or buying sex?</value>
+          </text>
+          <text id="/data/mbuysex:hint">
+            <value/>
+          </text>
+          <text id="/data/mbuysex:option0">
+            <value>None</value>
+          </text>
+          <text id="/data/mbuysex:option1">
+            <value>Less than half</value>
+          </text>
+          <text id="/data/mbuysex:option2">
+            <value>Greater than or equal to half</value>
+          </text>
+          <text id="/data/mbuysex:option3">
+            <value>All</value>
+          </text>
+          <text id="/data/mbuysex:option4">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/motherlocal:label">
+            <value>Do you believe that the men who come here go to other locations to socialize and look for a new partner?</value>
+          </text>
+          <text id="/data/motherlocal:hint">
+            <value/>
+          </text>
+          <text id="/data/motherlocal:option0">
+            <value>Yes</value>
+          </text>
+          <text id="/data/motherlocal:option1">
+            <value>No</value>
+          </text>
+          <text id="/data/motherlocal:option2">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/fotherlocals:label">
+            <value>Do you believe that the women who come here go to other locations to socialize and look for a new partner?</value>
+          </text>
+          <text id="/data/fotherlocals:hint">
+            <value/>
+          </text>
+          <text id="/data/fotherlocals:option0">
+            <value>Yes</value>
+          </text>
+          <text id="/data/fotherlocals:option1">
+            <value>No</value>
+          </text>
+          <text id="/data/fotherlocals:option2">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/nameotherlocal:label">
+            <value>What is the name of a location you think is most popular with the people who come to this place?</value>
+          </text>
+          <text id="/data/nameotherlocal:hint">
+            <value/>
+          </text>
+          <text id="/data/otherlocal:label">
+            <value>Where is this venue located?</value>
+          </text>
+          <text id="/data/otherlocal:hint">
+            <value/>
+          </text>
+          <text id="/data/othertype:label">
+            <value>What type of venue is it?</value>
+          </text>
+          <text id="/data/othertype:hint">
+            <value/>
+          </text>
+          <text id="/data/othertype:option0">
+            <value>Informal bar, Home brew</value>
+          </text>
+          <text id="/data/othertype:option1">
+            <value>Formal bar, Tavern, Nightclub</value>
+          </text>
+          <text id="/data/othertype:option2">
+            <value>Brothel</value>
+          </text>
+          <text id="/data/othertype:option3">
+            <value>Hotel, Hostel, Dormitory</value>
+          </text>
+          <text id="/data/othertype:option4">
+            <value>Restaurant</value>
+          </text>
+          <text id="/data/othertype:option5">
+            <value>Bus, Train, Taxi, Truck stop</value>
+          </text>
+          <text id="/data/othertype:option6">
+            <value>Street</value>
+          </text>
+          <text id="/data/othertype:option7">
+            <value>Mall, Shopping Center</value>
+          </text>
+          <text id="/data/othertype:option8">
+            <value>Abandoned Yard, Field, Bush</value>
+          </text>
+          <text id="/data/othertype:option9">
+            <value>Other</value>
+          </text>
+          <text id="/data/other:label">
+            <value>Specify what you mean by other</value>
+          </text>
+          <text id="/data/other:hint">
+            <value/>
+          </text>
+        </translation>
+      </itext>
+      <bind nodeset="/data/VenueName" type="string" required="true()"/>
+      <bind nodeset="/data/VenueLocation" type="string" required="true()"/>
+      <bind nodeset="/data/gpslocation" type="geopoint"/>
+      <bind nodeset="/data/operation" required="true()"/>
+      <bind nodeset="/data/activities" required="true()"/>
+      <bind nodeset="/data/druguse" required="true()"/>
+      <bind nodeset="/data/sexbehavior" required="true()"/>
+      <bind nodeset="/data/socializelocal" required="true()"/>
+      <bind nodeset="/data/busytimes" required="true()"/>
+      <bind nodeset="/data/busyday" required="true()"/>
+      <bind nodeset="/data/busytime" required="true()"/>
+      <bind nodeset="/data/busyday2" required="true()"/>
+      <bind nodeset="/data/busytime2" required="true()"/>
+      <bind nodeset="/data/nopeople" required="true()"/>
+      <bind nodeset="/data/nosocialize" required="true()"/>
+      <bind nodeset="/data/mensocial" type="int"/>
+      <bind nodeset="/data/womensocial" type="int"/>
+      <bind nodeset="/data/comefrom" required="true()"/>
+      <bind nodeset="/data/fppa" required="true()"/>
+      <bind nodeset="/data/fstudent" required="true()"/>
+      <bind nodeset="/data/funemployed" required="true()"/>
+      <bind nodeset="/data/funiversity" required="true()"/>
+      <bind nodeset="/data/f18" required="true()"/>
+      <bind nodeset="/data/fwalk" required="true()"/>
+      <bind nodeset="/data/fonceaweek" required="true()"/>
+      <bind nodeset="/data/foutside" required="true()"/>
+      <bind nodeset="/data/fdrink" required="true()"/>
+      <bind nodeset="/data/fsex" required="true()"/>
+      <bind nodeset="/data/fdrugs" required="true()"/>
+      <bind nodeset="/data/fbuysex" required="true()"/>
+      <bind nodeset="/data/mppa" required="true()"/>
+      <bind nodeset="/data/mstudents" required="true()"/>
+      <bind nodeset="/data/munemployed" required="true()"/>
+      <bind nodeset="/data/muniversity" required="true()"/>
+      <bind nodeset="/data/m18" required="true()"/>
+      <bind nodeset="/data/mwalk" required="true()"/>
+      <bind nodeset="/data/monceaweek" required="true()"/>
+      <bind nodeset="/data/moutside" required="true()"/>
+      <bind nodeset="/data/mdrink" required="true()"/>
+      <bind nodeset="/data/msex" required="true()"/>
+      <bind nodeset="/data/mdrugs" required="true()"/>
+      <bind nodeset="/data/mbuysex" required="true()"/>
+      <bind nodeset="/data/motherlocal" required="true()"/>
+      <bind nodeset="/data/fotherlocals" required="true()"/>
+      <bind nodeset="/data/nameotherlocal" type="string"/>
+      <bind nodeset="/data/otherlocal" type="string"/>
+      <bind nodeset="/data/othertype"/>
+      <bind nodeset="/data/other" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="VenueName">
+      <label ref="jr:itext('/data/VenueName:label')"/>
+      <hint ref="jr:itext('/data/VenueName:hint')"/>
+    </input>
+    <input ref="VenueLocation">
+      <label ref="jr:itext('/data/VenueLocation:label')"/>
+      <hint ref="jr:itext('/data/VenueLocation:hint')"/>
+    </input>
+    <input ref="gpslocation">
+      <label ref="jr:itext('/data/gpslocation:label')"/>
+      <hint ref="jr:itext('/data/gpslocation:hint')"/>
+    </input>
+    <select1 ref="operation">
+      <label ref="jr:itext('/data/operation:label')"/>
+      <hint ref="jr:itext('/data/operation:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/operation:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/operation:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/operation:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/operation:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/operation:option4')"/>
+        <value/>
+      </item>
+    </select1>
+    <select ref="activities">
+      <label ref="jr:itext('/data/activities:label')"/>
+      <hint ref="jr:itext('/data/activities:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/activities:option0')"/>
+        <value></value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/activities:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/activities:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/activities:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/activities:option4')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/activities:option5')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/activities:option6')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/activities:option7')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/activities:option8')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/activities:option9')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/activities:option10')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/activities:option11')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/activities:option12')"/>
+        <value/>
+      </item>
+    </select>
+    <select1 ref="druguse">
+      <label ref="jr:itext('/data/druguse:label')"/>
+      <hint ref="jr:itext('/data/druguse:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/druguse:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/druguse:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/druguse:option2')"/>
+        <value/>
+      </item>
+    </select1>
+    <select ref="sexbehavior">
+      <label ref="jr:itext('/data/sexbehavior:label')"/>
+      <hint ref="jr:itext('/data/sexbehavior:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/sexbehavior:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/sexbehavior:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/sexbehavior:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/sexbehavior:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/sexbehavior:option4')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/sexbehavior:option5')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/sexbehavior:option6')"/>
+        <value/>
+      </item>
+    </select>
+    <select ref="socializelocal">
+      <label ref="jr:itext('/data/socializelocal:label')"/>
+      <hint ref="jr:itext('/data/socializelocal:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/socializelocal:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/socializelocal:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/socializelocal:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/socializelocal:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/socializelocal:option4')"/>
+        <value/>
+      </item>
+    </select>
+    <select ref="busytimes">
+      <label ref="jr:itext('/data/busytimes:label')"/>
+      <hint ref="jr:itext('/data/busytimes:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/busytimes:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/busytimes:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/busytimes:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/busytimes:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/busytimes:option4')"/>
+        <value/>
+      </item>
+    </select>
+    <select1 ref="busyday">
+      <label ref="jr:itext('/data/busyday:label')"/>
+      <hint ref="jr:itext('/data/busyday:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/busyday:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/busyday:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/busyday:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/busyday:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/busyday:option4')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/busyday:option5')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/busyday:option6')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/busyday:option7')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="busytime">
+      <label ref="jr:itext('/data/busytime:label')"/>
+      <hint ref="jr:itext('/data/busytime:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/busytime:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/busytime:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/busytime:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/busytime:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/busytime:option4')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="busyday2">
+      <label ref="jr:itext('/data/busyday2:label')"/>
+      <hint ref="jr:itext('/data/busyday2:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/busyday2:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/busyday2:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/busyday2:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/busyday2:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/busyday2:option4')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/busyday2:option5')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/busyday2:option6')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/busyday2:option7')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="busytime2">
+      <label ref="jr:itext('/data/busytime2:label')"/>
+      <hint ref="jr:itext('/data/busytime2:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/busytime2:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/busytime2:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/busytime2:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/busytime2:option3')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="nopeople">
+      <label ref="jr:itext('/data/nopeople:label')"/>
+      <hint ref="jr:itext('/data/nopeople:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/nopeople:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/nopeople:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/nopeople:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/nopeople:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/nopeople:option4')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/nopeople:option5')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/nopeople:option6')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/nopeople:option7')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/nopeople:option8')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/nopeople:option9')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/nopeople:option10')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/nopeople:option11')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/nopeople:option12')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/nopeople:option13')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/nopeople:option14')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="nosocialize">
+      <label ref="jr:itext('/data/nosocialize:label')"/>
+      <hint ref="jr:itext('/data/nosocialize:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/nosocialize:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/nosocialize:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/nosocialize:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/nosocialize:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/nosocialize:option4')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/nosocialize:option5')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/nosocialize:option6')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/nosocialize:option7')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/nosocialize:option8')"/>
+        <value/>
+      </item>
+    </select1>
+    <input ref="mensocial">
+      <label ref="jr:itext('/data/mensocial:label')"/>
+      <hint ref="jr:itext('/data/mensocial:hint')"/>
+    </input>
+    <input ref="womensocial">
+      <label ref="jr:itext('/data/womensocial:label')"/>
+      <hint ref="jr:itext('/data/womensocial:hint')"/>
+    </input>
+    <select1 ref="comefrom">
+      <label ref="jr:itext('/data/comefrom:label')"/>
+      <hint ref="jr:itext('/data/comefrom:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/comefrom:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/comefrom:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/comefrom:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/comefrom:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/comefrom:option4')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/comefrom:option5')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/comefrom:option6')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="fppa">
+      <label ref="jr:itext('/data/fppa:label')"/>
+      <hint ref="jr:itext('/data/fppa:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/fppa:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fppa:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fppa:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fppa:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fppa:option4')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="fstudent">
+      <label ref="jr:itext('/data/fstudent:label')"/>
+      <hint ref="jr:itext('/data/fstudent:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/fstudent:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fstudent:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fstudent:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fstudent:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fstudent:option4')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="funemployed">
+      <label ref="jr:itext('/data/funemployed:label')"/>
+      <hint ref="jr:itext('/data/funemployed:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/funemployed:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/funemployed:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/funemployed:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/funemployed:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/funemployed:option4')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="funiversity">
+      <label ref="jr:itext('/data/funiversity:label')"/>
+      <hint ref="jr:itext('/data/funiversity:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/funiversity:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/funiversity:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/funiversity:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/funiversity:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/funiversity:option4')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="f18">
+      <label ref="jr:itext('/data/f18:label')"/>
+      <hint ref="jr:itext('/data/f18:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/f18:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/f18:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/f18:option2')"/>
+        <value></value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/f18:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/f18:option4')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="fwalk">
+      <label ref="jr:itext('/data/fwalk:label')"/>
+      <hint ref="jr:itext('/data/fwalk:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/fwalk:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fwalk:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fwalk:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fwalk:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fwalk:option4')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="fonceaweek">
+      <label ref="jr:itext('/data/fonceaweek:label')"/>
+      <hint ref="jr:itext('/data/fonceaweek:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/fonceaweek:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fonceaweek:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fonceaweek:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fonceaweek:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fonceaweek:option4')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="foutside">
+      <label ref="jr:itext('/data/foutside:label')"/>
+      <hint ref="jr:itext('/data/foutside:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/foutside:option0')"/>
+        <value></value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/foutside:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/foutside:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/foutside:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/foutside:option4')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="fdrink">
+      <label ref="jr:itext('/data/fdrink:label')"/>
+      <hint ref="jr:itext('/data/fdrink:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/fdrink:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fdrink:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fdrink:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fdrink:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fdrink:option4')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="fsex">
+      <label ref="jr:itext('/data/fsex:label')"/>
+      <hint ref="jr:itext('/data/fsex:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/fsex:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fsex:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fsex:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fsex:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fsex:option4')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="fdrugs">
+      <label ref="jr:itext('/data/fdrugs:label')"/>
+      <hint ref="jr:itext('/data/fdrugs:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/fdrugs:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fdrugs:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fdrugs:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fdrugs:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fdrugs:option4')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="fbuysex">
+      <label ref="jr:itext('/data/fbuysex:label')"/>
+      <hint ref="jr:itext('/data/fbuysex:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/fbuysex:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fbuysex:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fbuysex:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fbuysex:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fbuysex:option4')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="mppa">
+      <label ref="jr:itext('/data/mppa:label')"/>
+      <hint ref="jr:itext('/data/mppa:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/mppa:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/mppa:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/mppa:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/mppa:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/mppa:option4')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="mstudents">
+      <label ref="jr:itext('/data/mstudents:label')"/>
+      <hint ref="jr:itext('/data/mstudents:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/mstudents:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/mstudents:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/mstudents:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/mstudents:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/mstudents:option4')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="munemployed">
+      <label ref="jr:itext('/data/munemployed:label')"/>
+      <hint ref="jr:itext('/data/munemployed:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/munemployed:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/munemployed:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/munemployed:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/munemployed:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/munemployed:option4')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="muniversity">
+      <label ref="jr:itext('/data/muniversity:label')"/>
+      <hint ref="jr:itext('/data/muniversity:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/muniversity:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/muniversity:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/muniversity:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/muniversity:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/muniversity:option4')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="m18">
+      <label ref="jr:itext('/data/m18:label')"/>
+      <hint ref="jr:itext('/data/m18:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/m18:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/m18:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/m18:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/m18:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/m18:option4')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="mwalk">
+      <label ref="jr:itext('/data/mwalk:label')"/>
+      <hint ref="jr:itext('/data/mwalk:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/mwalk:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/mwalk:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/mwalk:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/mwalk:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/mwalk:option4')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="monceaweek">
+      <label ref="jr:itext('/data/monceaweek:label')"/>
+      <hint ref="jr:itext('/data/monceaweek:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/monceaweek:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/monceaweek:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/monceaweek:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/monceaweek:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/monceaweek:option4')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="moutside">
+      <label ref="jr:itext('/data/moutside:label')"/>
+      <hint ref="jr:itext('/data/moutside:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/moutside:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/moutside:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/moutside:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/moutside:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/moutside:option4')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="mdrink">
+      <label ref="jr:itext('/data/mdrink:label')"/>
+      <hint ref="jr:itext('/data/mdrink:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/mdrink:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/mdrink:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/mdrink:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/mdrink:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/mdrink:option4')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="msex">
+      <label ref="jr:itext('/data/msex:label')"/>
+      <hint ref="jr:itext('/data/msex:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/msex:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/msex:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/msex:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/msex:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/msex:option4')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="mdrugs">
+      <label ref="jr:itext('/data/mdrugs:label')"/>
+      <hint ref="jr:itext('/data/mdrugs:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/mdrugs:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/mdrugs:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/mdrugs:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/mdrugs:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/mdrugs:option4')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="mbuysex">
+      <label ref="jr:itext('/data/mbuysex:label')"/>
+      <hint ref="jr:itext('/data/mbuysex:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/mbuysex:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/mbuysex:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/mbuysex:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/mbuysex:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/mbuysex:option4')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="motherlocal">
+      <label ref="jr:itext('/data/motherlocal:label')"/>
+      <hint ref="jr:itext('/data/motherlocal:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/motherlocal:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/motherlocal:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/motherlocal:option2')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="fotherlocals">
+      <label ref="jr:itext('/data/fotherlocals:label')"/>
+      <hint ref="jr:itext('/data/fotherlocals:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/fotherlocals:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fotherlocals:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fotherlocals:option2')"/>
+        <value/>
+      </item>
+    </select1>
+    <input ref="nameotherlocal">
+      <label ref="jr:itext('/data/nameotherlocal:label')"/>
+      <hint ref="jr:itext('/data/nameotherlocal:hint')"/>
+    </input>
+    <input ref="otherlocal">
+      <label ref="jr:itext('/data/otherlocal:label')"/>
+      <hint ref="jr:itext('/data/otherlocal:hint')"/>
+    </input>
+    <select1 ref="othertype">
+      <label ref="jr:itext('/data/othertype:label')"/>
+      <hint ref="jr:itext('/data/othertype:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/othertype:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/othertype:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/othertype:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/othertype:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/othertype:option4')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/othertype:option5')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/othertype:option6')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/othertype:option7')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/othertype:option8')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/othertype:option9')"/>
+        <value/>
+      </item>
+    </select1>
+    <input ref="other">
+      <label ref="jr:itext('/data/other:label')"/>
+      <hint ref="jr:itext('/data/other:hint')"/>
+    </input>
+  </h:body>
+</h:html>

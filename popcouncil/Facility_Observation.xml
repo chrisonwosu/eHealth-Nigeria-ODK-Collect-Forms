@@ -1,0 +1,605 @@
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa">
+  <h:head>
+    <h:title>Facility Observation</h:title>
+    <model>
+      <instance>
+        <data id="build_Facility-Obs_1291479151">
+           <!-- Hidden Field for Form Version -->
+          <FormVersion>0.1</FormVersion>
+           <!-- Preloaded XForm Attributes -->
+          <State/>
+          <StreetName/>
+          <FacilityType/>
+          <FacilityLocation/>
+          <FacilityType2/>
+          <FacilitySize/>
+          <CondomGiven/>
+          <CondomsSold/>
+          <PlaceTypes/>
+          <PreventionActivities/>
+          <NoPeople/>
+          <NoIDU/>
+          <FemaleUsers/>
+          <ProportionsM1/>
+          <ProportionsM2/>
+          <ProportionsM3/>
+          <ProportionsF1/>
+          <ProportionsF2/>
+          <ProportionsF3/>
+          <OpenClose>
+            <Open/>
+            <Close/>
+            <NotOpen/>
+          </OpenClose>
+          <untitled40 jr:template="">
+            <MorePresent/>
+          </untitled40>
+          <StaffCapacity/>
+          <HowLong/>
+          <CommentFemale/>
+          <CommentSafety/>
+          <EndTime/>
+        </data>
+      </instance>
+      <itext>
+        <translation lang="eng">
+          <text id="/data/State:label">
+            <value>Enter State Name</value>
+          </text>
+          <text id="/data/State:hint">
+            <value/>
+          </text>
+          <text id="/data/StreetName:label">
+            <value>What is the Street Name</value>
+          </text>
+          <text id="/data/StreetName:hint">
+            <value/>
+          </text>
+          <text id="/data/FacilityType:label">
+            <value>What type of Facility is available here</value>
+          </text>
+          <text id="/data/FacilityType:hint">
+            <value/>
+          </text>
+          <text id="/data/FacilityLocation:label">
+            <value>Take the GPS coordinates</value>
+          </text>
+          <text id="/data/FacilityLocation:hint">
+            <value/>
+          </text>
+          <text id="/data/FacilityType2:label">
+            <value>What type of Facility is this?</value>
+          </text>
+          <text id="/data/FacilityType2:hint">
+            <value/>
+          </text>
+          <text id="/data/FacilityType2:option0">
+            <value>Pharmacy where clean needles and syringes are sold</value>
+          </text>
+          <text id="/data/FacilityType2:option1">
+            <value>Drug Rehabilitation center</value>
+          </text>
+          <text id="/data/FacilityType2:option2">
+            <value>HIV testing and counseling center</value>
+          </text>
+          <text id="/data/FacilityType2:option3">
+            <value>Walk-in clinic</value>
+          </text>
+          <text id="/data/FacilityType2:option4">
+            <value>Psychiatric hospital</value>
+          </text>
+          <text id="/data/FacilityType2:option5">
+            <value>Non governmental organization</value>
+          </text>
+          <text id="/data/FacilityType2:option6">
+            <value>Other</value>
+          </text>
+          <text id="/data/FacilitySize:label">
+            <value>What is the size of the facility's structure?</value>
+          </text>
+          <text id="/data/FacilitySize:hint">
+            <value/>
+          </text>
+          <text id="/data/FacilitySize:option0">
+            <value>1 Room</value>
+          </text>
+          <text id="/data/FacilitySize:option1">
+            <value>2 Rooms</value>
+          </text>
+          <text id="/data/FacilitySize:option2">
+            <value>A flat</value>
+          </text>
+          <text id="/data/FacilitySize:option3">
+            <value>A house</value>
+          </text>
+          <text id="/data/CondomGiven:label">
+            <value>Are there free male/ female condoms given at this facility</value>
+          </text>
+          <text id="/data/CondomGiven:hint">
+            <value/>
+          </text>
+          <text id="/data/CondomGiven:option0">
+            <value>Yes</value>
+          </text>
+          <text id="/data/CondomGiven:option1">
+            <value>No</value>
+          </text>
+          <text id="/data/CondomGiven:option2">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/CondomsSold:label">
+            <value>Are condoms sold at this venue?</value>
+          </text>
+          <text id="/data/CondomsSold:hint">
+            <value/>
+          </text>
+          <text id="/data/CondomsSold:option0">
+            <value>Yes</value>
+          </text>
+          <text id="/data/CondomsSold:option1">
+            <value>No</value>
+          </text>
+          <text id="/data/CondomsSold:option2">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/PlaceTypes:label">
+            <value>Are any of the following types of places located within 10 block radius of this venue?</value>
+          </text>
+          <text id="/data/PlaceTypes:hint">
+            <value/>
+          </text>
+          <text id="/data/PlaceTypes:option0">
+            <value>Pharmacy where clean needles are sold</value>
+          </text>
+          <text id="/data/PlaceTypes:option1">
+            <value>HIV Counseling and Testing</value>
+          </text>
+          <text id="/data/PlaceTypes:option2">
+            <value>Drug abuse treatment (rehab/ detox)</value>
+          </text>
+          <text id="/data/PlaceTypes:option3">
+            <value>Walk-in clinic</value>
+          </text>
+          <text id="/data/PlaceTypes:option4">
+            <value>Psychiatric Hospital</value>
+          </text>
+          <text id="/data/PreventionActivities:label">
+            <value>Did you observe any of the following HIV/ AIDS prevention activities in the facility?</value>
+          </text>
+          <text id="/data/PreventionActivities:hint">
+            <value/>
+          </text>
+          <text id="/data/PreventionActivities:option0">
+            <value>Educational talk on HIV/ AIDS?</value>
+          </text>
+          <text id="/data/PreventionActivities:option1">
+            <value>Peer health educators?</value>
+          </text>
+          <text id="/data/PreventionActivities:option2">
+            <value>Condom distribution?</value>
+          </text>
+          <text id="/data/PreventionActivities:option3">
+            <value>Drug counseling and education?</value>
+          </text>
+          <text id="/data/PreventionActivities:option4">
+            <value>Community outreach and social work?</value>
+          </text>
+          <text id="/data/PreventionActivities:option5">
+            <value>HIV/ AIDS posters or leaflets?</value>
+          </text>
+          <text id="/data/PreventionActivities:option6">
+            <value>Others</value>
+          </text>
+          <text id="/data/NoPeople:label">
+            <value>Approximately how many people (men and women) are here during the time of your observation? This includes people who come here for treatment and people who come here for other reasons.</value>
+          </text>
+          <text id="/data/NoPeople:hint">
+            <value/>
+          </text>
+          <text id="/data/NoIDU:label">
+            <value>How many drug users (injectors and non-injectors) do you think you observed in and around this facility during your observation period?</value>
+          </text>
+          <text id="/data/NoIDU:hint">
+            <value/>
+          </text>
+          <text id="/data/FemaleUsers:label">
+            <value>Of those, about how many of them were female drug users?</value>
+          </text>
+          <text id="/data/FemaleUsers:hint">
+            <value/>
+          </text>
+          <text id="/data/ProportionsM1:label">
+            <value>What proportion of male drug users are below 18 years of age?</value>
+          </text>
+          <text id="/data/ProportionsM1:hint">
+            <value/>
+          </text>
+          <text id="/data/ProportionsM2:label">
+            <value>What proportion of male drug users are between 18 and 40 years of age?</value>
+          </text>
+          <text id="/data/ProportionsM2:hint">
+            <value/>
+          </text>
+          <text id="/data/ProportionsM3:label">
+            <value>What proportion of male drug users are 40 years of age and above? </value>
+          </text>
+          <text id="/data/ProportionsM3:hint">
+            <value/>
+          </text>
+          <text id="/data/ProportionsF1:label">
+            <value>What proportion of female drug users are below 18 years of age?</value>
+          </text>
+          <text id="/data/ProportionsF1:hint">
+            <value/>
+          </text>
+          <text id="/data/ProportionsF2:label">
+            <value>What proportion of female drug users are between 18 and 40 years of age?</value>
+          </text>
+          <text id="/data/ProportionsF2:hint">
+            <value/>
+          </text>
+          <text id="/data/ProportionsF3:label">
+            <value>What proportion of female drug users are 40 years of age and above?</value>
+          </text>
+          <text id="/data/ProportionsF3:hint">
+            <value/>
+          </text>
+          <text id="/data/OpenClose:label">
+            <value>What time does the facility open and close daily?</value>
+          </text>
+          <text id="/data/OpenClose/Open:label">
+            <value>What time does the facility open?</value>
+          </text>
+          <text id="/data/OpenClose/Open:hint">
+            <value/>
+          </text>
+          <text id="/data/OpenClose/Close:label">
+            <value>What time does the facility close?</value>
+          </text>
+          <text id="/data/OpenClose/Close:hint">
+            <value/>
+          </text>
+          <text id="/data/OpenClose/NotOpen:label">
+            <value>Are there days when the facility doesn't open?</value>
+          </text>
+          <text id="/data/OpenClose/NotOpen:hint">
+            <value/>
+          </text>
+          <text id="/data/OpenClose/NotOpen:option0">
+            <value>Yes</value>
+          </text>
+          <text id="/data/untitled40:label">
+            <value/>
+          </text>
+          <text id="/data/untitled40/MorePresent:label">
+            <value>Name a time when female drug users are more present</value>
+          </text>
+          <text id="/data/untitled40/MorePresent:hint">
+            <value/>
+          </text>
+          <text id="/data/StaffCapacity:label">
+            <value>What is the staff capacity of the facility?</value>
+          </text>
+          <text id="/data/StaffCapacity:hint">
+            <value/>
+          </text>
+          <text id="/data/StaffCapacity:option0">
+            <value>1 - 55 - 10</value>
+          </text>
+          <text id="/data/StaffCapacity:option1">
+            <value>10 - 20 </value>
+          </text>
+          <text id="/data/StaffCapacity:option2">
+            <value>20 - 40</value>
+          </text>
+          <text id="/data/How Long:label">
+            <value>How long has this facility been situated here?</value>
+          </text>
+          <text id="/data/How Long:hint">
+            <value/>
+          </text>
+          <text id="/data/CommentFemale:label">
+            <value>Comment on any other observations about female drug users that you have observed at this facility.</value>
+          </text>
+          <text id="/data/CommentFemale:hint">
+            <value/>
+          </text>
+          <text id="/data/CommentSafety:label">
+            <value>Comment on the safety of this facility for outreach workers and other program staff.</value>
+          </text>
+          <text id="/data/CommentSafety:hint">
+            <value/>
+          </text>
+          <text id="/data/EndTime:label">
+            <value>End time of observation</value>
+          </text>
+          <text id="/data/EndTime:hint">
+            <value/>
+          </text>
+        </translation>
+      </itext>
+      <bind nodeset="/data/State" required="true()"/>
+      <bind nodeset="/data/StreetName" type="string" required="true()"/>
+      <bind nodeset="/data/FacilityType" type="string" required="true()"/>
+      <bind nodeset="/data/FacilityLocation" type="geopoint" required="true()"/>
+      <bind nodeset="/data/FacilityType2" required="true()"/>
+      <bind nodeset="/data/FacilitySize" required="true()"/>
+      <bind nodeset="/data/CondomGiven" required="true()"/>
+      <bind nodeset="/data/CondomsSold" required="true()"/>
+      <bind nodeset="/data/PlaceTypes" required="true()"/>
+      <bind nodeset="/data/PreventionActivities" required="true()"/>
+      <bind nodeset="/data/NoPeople" type="int" required="true()"/>
+      <bind nodeset="/data/NoIDU" type="int" required="true()"/>
+      <bind nodeset="/data/FemaleUsers" type="int" required="true()"/>
+      <bind nodeset="/data/ProportionsM1" type="int" required="true()"/>
+      <bind nodeset="/data/ProportionsM2" type="int" required="true()"/>
+      <bind nodeset="/data/ProportionsM3" type="int" required="true()"/>
+      <bind nodeset="/data/ProportionsF1" type="int" required="true()"/>
+      <bind nodeset="/data/ProportionsF2" type="int" required="true()"/>
+      <bind nodeset="/data/ProportionsF3" type="int" required="true()"/>
+      <bind nodeset="/data/OpenClose/Open" type="int" required="true()"/>
+      <bind nodeset="/data/OpenClose/Close" type="int" required="true()"/>
+      <bind nodeset="/data/OpenClose/NotOpen" required="true()"/>
+      <bind nodeset="/data/untitled40/MorePresent" type="int"/>
+      <bind nodeset="/data/StaffCapacity" required="true()"/>
+      <bind nodeset="/data/How Long" type="string" required="true()"/>
+      <bind nodeset="/data/CommentFemale" type="string" required="true()"/>
+      <bind nodeset="/data/CommentSafety" type="string" required="true()"/>
+      <bind nodeset="/data/EndTime" type="int" required="true()"/>
+    </model>
+  </h:head>
+  <h:body>
+    <select1 ref="State">
+      <label ref="jr:itext('/data/State:label')"/>
+      <hint ref="jr:itext('/data/State:hint')"/>
+    </select1>
+    <input ref="StreetName">
+      <label ref="jr:itext('/data/StreetName:label')"/>
+      <hint ref="jr:itext('/data/StreetName:hint')"/>
+    </input>
+    <input ref="FacilityType">
+      <label ref="jr:itext('/data/FacilityType:label')"/>
+      <hint ref="jr:itext('/data/FacilityType:hint')"/>
+    </input>
+    <input ref="FacilityLocation">
+      <label ref="jr:itext('/data/FacilityLocation:label')"/>
+      <hint ref="jr:itext('/data/FacilityLocation:hint')"/>
+    </input>
+    <select1 ref="FacilityType2">
+      <label ref="jr:itext('/data/FacilityType2:label')"/>
+      <hint ref="jr:itext('/data/FacilityType2:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/FacilityType2:option0')"/>
+        <value></value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/FacilityType2:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/FacilityType2:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/FacilityType2:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/FacilityType2:option4')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/FacilityType2:option5')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/FacilityType2:option6')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="FacilitySize">
+      <label ref="jr:itext('/data/FacilitySize:label')"/>
+      <hint ref="jr:itext('/data/FacilitySize:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/FacilitySize:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/FacilitySize:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/FacilitySize:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/FacilitySize:option3')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="CondomGiven">
+      <label ref="jr:itext('/data/CondomGiven:label')"/>
+      <hint ref="jr:itext('/data/CondomGiven:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/CondomGiven:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/CondomGiven:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/CondomGiven:option2')"/>
+        <value/>
+      </item>
+    </select1>
+    <select1 ref="CondomsSold">
+      <label ref="jr:itext('/data/CondomsSold:label')"/>
+      <hint ref="jr:itext('/data/CondomsSold:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/CondomsSold:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/CondomsSold:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/CondomsSold:option2')"/>
+        <value/>
+      </item>
+    </select1>
+    <select ref="PlaceTypes">
+      <label ref="jr:itext('/data/PlaceTypes:label')"/>
+      <hint ref="jr:itext('/data/PlaceTypes:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/PlaceTypes:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/PlaceTypes:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/PlaceTypes:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/PlaceTypes:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/PlaceTypes:option4')"/>
+        <value/>
+      </item>
+    </select>
+    <select ref="PreventionActivities">
+      <label ref="jr:itext('/data/PreventionActivities:label')"/>
+      <hint ref="jr:itext('/data/PreventionActivities:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/PreventionActivities:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/PreventionActivities:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/PreventionActivities:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/PreventionActivities:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/PreventionActivities:option4')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/PreventionActivities:option5')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/PreventionActivities:option6')"/>
+        <value/>
+      </item>
+    </select>
+    <input ref="NoPeople">
+      <label ref="jr:itext('/data/NoPeople:label')"/>
+      <hint ref="jr:itext('/data/NoPeople:hint')"/>
+    </input>
+    <input ref="NoIDU">
+      <label ref="jr:itext('/data/NoIDU:label')"/>
+      <hint ref="jr:itext('/data/NoIDU:hint')"/>
+    </input>
+    <input ref="FemaleUsers">
+      <label ref="jr:itext('/data/FemaleUsers:label')"/>
+      <hint ref="jr:itext('/data/FemaleUsers:hint')"/>
+    </input>
+    <input ref="ProportionsM1">
+      <label ref="jr:itext('/data/ProportionsM1:label')"/>
+      <hint ref="jr:itext('/data/ProportionsM1:hint')"/>
+    </input>
+    <input ref="ProportionsM2">
+      <label ref="jr:itext('/data/ProportionsM2:label')"/>
+      <hint ref="jr:itext('/data/ProportionsM2:hint')"/>
+    </input>
+    <input ref="ProportionsM3">
+      <label ref="jr:itext('/data/ProportionsM3:label')"/>
+      <hint ref="jr:itext('/data/ProportionsM3:hint')"/>
+    </input>
+    <input ref="ProportionsF1">
+      <label ref="jr:itext('/data/ProportionsF1:label')"/>
+      <hint ref="jr:itext('/data/ProportionsF1:hint')"/>
+    </input>
+    <input ref="ProportionsF2">
+      <label ref="jr:itext('/data/ProportionsF2:label')"/>
+      <hint ref="jr:itext('/data/ProportionsF2:hint')"/>
+    </input>
+    <input ref="ProportionsF3">
+      <label ref="jr:itext('/data/ProportionsF3:label')"/>
+      <hint ref="jr:itext('/data/ProportionsF3:hint')"/>
+    </input>
+    <group>
+      <label ref="jr:itext('/data/OpenClose:label')"/>
+      <input ref="OpenClose/Open">
+        <label ref="jr:itext('/data/OpenClose/Open:label')"/>
+        <hint ref="jr:itext('/data/OpenClose/Open:hint')"/>
+      </input>
+      <input ref="OpenClose/Close">
+        <label ref="jr:itext('/data/OpenClose/Close:label')"/>
+        <hint ref="jr:itext('/data/OpenClose/Close:hint')"/>
+      </input>
+      <select1 ref="OpenClose/NotOpen">
+        <label ref="jr:itext('/data/OpenClose/NotOpen:label')"/>
+        <hint ref="jr:itext('/data/OpenClose/NotOpen:hint')"/>
+        <item>
+          <label ref="jr:itext('/data/OpenClose/NotOpen:option0')"/>
+          <value>No</value>
+        </item>
+      </select1>
+    </group>
+    <group>
+      <label ref="jr:itext('/data/untitled40:label')"/>
+      <repeat nodeset="/data/untitled40">
+        <input ref="untitled40/MorePresent">
+          <label ref="jr:itext('/data/untitled40/MorePresent:label')"/>
+          <hint ref="jr:itext('/data/untitled40/MorePresent:hint')"/>
+        </input>
+      </repeat>
+    </group>
+    <select1 ref="StaffCapacity">
+      <label ref="jr:itext('/data/StaffCapacity:label')"/>
+      <hint ref="jr:itext('/data/StaffCapacity:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/StaffCapacity:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/StaffCapacity:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/StaffCapacity:option2')"/>
+        <value/>
+      </item>
+    </select1>
+    <input ref="How Long">
+      <label ref="jr:itext('/data/How Long:label')"/>
+      <hint ref="jr:itext('/data/How Long:hint')"/>
+    </input>
+    <input ref="CommentFemale">
+      <label ref="jr:itext('/data/CommentFemale:label')"/>
+      <hint ref="jr:itext('/data/CommentFemale:hint')"/>
+    </input>
+    <input ref="CommentSafety">
+      <label ref="jr:itext('/data/CommentSafety:label')"/>
+      <hint ref="jr:itext('/data/CommentSafety:hint')"/>
+    </input>
+    <input ref="EndTime">
+      <label ref="jr:itext('/data/EndTime:label')"/>
+      <hint ref="jr:itext('/data/EndTime:hint')"/>
+    </input>
+  </h:body>
+</h:html>

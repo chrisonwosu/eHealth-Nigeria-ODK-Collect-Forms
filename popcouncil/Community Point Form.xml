@@ -1,0 +1,693 @@
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa">
+  <h:head>
+    <h:title>Community Point Form</h:title>
+    <model>
+      <instance>
+        <data id="build_Community-Point-Form_1291706528">
+          <state/>
+          <Venue/>
+          <street/>
+          <venuetype/>
+          <specifyother/>
+          <venuefound/>
+          <address/>
+          <gpslocal/>
+          <piccpobs/>
+          <picturescpobs jr:template="">
+            <otherpiccpobs/>
+          </picturescpobs>
+          <venuetype2/>
+          <activities/>
+          <obssyringe/>
+          <obsdrugtaking/>
+          <numpeopleobs/>
+          <numdrugtakerobs/>
+          <numfduobs/>
+          <propmale18/>
+          <propmale1840/>
+          <propmale40/>
+          <timeperiod/>
+          <timeperiodfdu/>
+          <fduhangoutwith/>
+          <audiocommentmaledu/>
+          <audiocommentfemaledu/>
+          <cpsafetyrating/>
+          <cpsafetyaudiocomment/>
+        </data>
+      </instance>
+      <itext>
+        <translation lang="eng">
+          <text id="/data/state:label">
+            <value>State</value>
+          </text>
+          <text id="/data/state:hint">
+            <value/>
+          </text>
+          <text id="/data/state:option0">
+            <value>Kano</value>
+          </text>
+          <text id="/data/state:option1">
+            <value>Kaduna</value>
+          </text>
+          <text id="/data/state:option2">
+            <value>Lagos</value>
+          </text>
+          <text id="/data/state:option3">
+            <value>Ogun</value>
+          </text>
+          <text id="/data/Venue:label">
+            <value>Venue Number</value>
+          </text>
+          <text id="/data/Venue:hint">
+            <value/>
+          </text>
+          <text id="/data/street:label">
+            <value>Name of street/area where venue is located</value>
+          </text>
+          <text id="/data/street:hint">
+            <value/>
+          </text>
+          <text id="/data/venuetype:label">
+            <value>What type of venue is this?</value>
+          </text>
+          <text id="/data/venuetype:hint">
+            <value/>
+          </text>
+          <text id="/data/venuetype:option0">
+            <value>Drug "Bunker"</value>
+          </text>
+          <text id="/data/venuetype:option1">
+            <value>Pharmacy/ chemist</value>
+          </text>
+          <text id="/data/venuetype:option2">
+            <value>Police posts</value>
+          </text>
+          <text id="/data/venuetype:option3">
+            <value>Motor garage</value>
+          </text>
+          <text id="/data/venuetype:option4">
+            <value>Abattoir</value>
+          </text>
+          <text id="/data/venuetype:option5">
+            <value>Walk-in-clinic</value>
+          </text>
+          <text id="/data/venuetype:option6">
+            <value>HIV testing and counseling</value>
+          </text>
+          <text id="/data/venuetype:option7">
+            <value>Psychiatric hospital</value>
+          </text>
+          <text id="/data/venuetype:option8">
+            <value>Area boys/gangs hangouts</value>
+          </text>
+          <text id="/data/venuetype:option9">
+            <value>Uncompleted building</value>
+          </text>
+          <text id="/data/venuetype:option10">
+            <value>Under bridge/make shift homes</value>
+          </text>
+          <text id="/data/venuetype:option11">
+            <value>Private hospital/clinic</value>
+          </text>
+          <text id="/data/venuetype:option12">
+            <value>NGO center/office</value>
+          </text>
+          <text id="/data/venuetype:option13">
+            <value>Others</value>
+          </text>
+          <text id="/data/specifyother:label">
+            <value>Specify other</value>
+          </text>
+          <text id="/data/specifyother:hint">
+            <value/>
+          </text>
+          <text id="/data/venuefound:label">
+            <value>Was the venue found?</value>
+          </text>
+          <text id="/data/venuefound:hint">
+            <value/>
+          </text>
+          <text id="/data/venuefound:option0">
+            <value>Yes and venue in operation</value>
+          </text>
+          <text id="/data/venuefound:option1">
+            <value>Yes but venue closed temporarily</value>
+          </text>
+          <text id="/data/venuefound:option2">
+            <value>Venue closed permanently or no longer a venue</value>
+          </text>
+          <text id="/data/venuefound:option3">
+            <value>Address insufficient, Venue not found</value>
+          </text>
+          <text id="/data/venuefound:option4">
+            <value>Duplicate venue, venue already visited</value>
+          </text>
+          <text id="/data/address:label">
+            <value>What is the address of the venue and how can I find it?</value>
+          </text>
+          <text id="/data/address:hint">
+            <value>Be very detailed</value>
+          </text>
+          <text id="/data/gpslocal:label">
+            <value>Take the GPS coordinates</value>
+          </text>
+          <text id="/data/gpslocal:hint">
+            <value></value>
+          </text>
+          <text id="/data/piccpobs:label">
+            <value>Community Point Picture</value>
+          </text>
+          <text id="/data/piccpobs:hint">
+            <value/>
+          </text>
+          <text id="/data/picturescpobs:label">
+            <value>Other Pictures</value>
+          </text>
+          <text id="/data/picturescpobs/otherpiccpobs:label">
+            <value>Other Community Point Picture</value>
+          </text>
+          <text id="/data/picturescpobs/otherpiccpobs:hint">
+            <value/>
+          </text>
+          <text id="/data/venuetype2:label">
+            <value>What type of venue is this?</value>
+          </text>
+          <text id="/data/venuetype2:hint">
+            <value/>
+          </text>
+          <text id="/data/venuetype2:option0">
+            <value>Eating, drinking, dancing, sleeping places</value>
+          </text>
+          <text id="/data/venuetype2:option1">
+            <value>Transportation, public, commercial areas</value>
+          </text>
+          <text id="/data/venuetype2:option2">
+            <value>Hidden, private, abandoned areas</value>
+          </text>
+          <text id="/data/venuetype2:option3">
+            <value>Events</value>
+          </text>
+
+          <text id="/data/numpeopleobs:label">
+            <value>Approximate Individuals Observed</value>
+          </text>
+          <text id="/data/numpeopleobs:hint">
+            <value>Approximately how many people (men and women) are here during the time of your observation?  This includes people who come here to socialize and people who come here for other reasons.  </value>
+          </text>
+          <text id="/data/numdrugtakerobs:label">
+            <value>Drug Takers Observed</value>
+          </text>
+          <text id="/data/numdrugtakerobs:hint">
+            <value>How many drug users (injectors and non-injectors) do you think you observed around this area during your observation period?</value>
+          </text>
+          <text id="/data/numfduobs:label">
+            <value>Female Drug Users Observed</value>
+          </text>
+          <text id="/data/numfduobs:hint">
+            <value>Of those, about how many of them were female drug users? </value>
+          </text>
+          <text id="/data/propmale18:label">
+            <value>What proportion of the MALE drug users are <18 years of age</value>
+          </text>
+          <text id="/data/propmale18:hint">
+            <value/>
+          </text>
+          <text id="/data/propmale18:option0">
+            <value>1/10 (10%)</value>
+          </text>
+          <text id="/data/propmale18:option1">
+            <value>1/4 (25%)</value>
+          </text>
+          <text id="/data/propmale18:option2">
+            <value>1/3 (33%)</value>
+          </text>
+          <text id="/data/propmale18:option3">
+            <value>1/2 (50%)</value>
+          </text>
+          <text id="/data/propmale18:option4">
+            <value>2/3 (67%)</value>
+          </text>
+          <text id="/data/propmale18:option5">
+            <value>3/4 (75%)</value>
+          </text>
+          <text id="/data/propmale18:option6">
+            <value>More than 3/4 (75%)</value>
+          </text>
+          <text id="/data/propmale1840:label">
+            <value>What proportion of the MALE drug users are 18 – 40 years</value>
+          </text>
+          <text id="/data/propmale1840:hint">
+            <value/>
+          </text>
+          <text id="/data/propmale40:label">
+            <value>What proportion of the MALE drug users are 40 or older</value>
+          </text>
+          <text id="/data/propmale40:hint">
+            <value/>
+          </text>
+          <text id="/data/timeperiod:label">
+            <value>Time Period</value>
+          </text>
+          <text id="/data/timeperiod:hint">
+            <value>What is the time period that we would find the most drug users hanging out around here?</value>
+          </text>
+          <text id="/data/timeperiod:option0">
+            <value>Don't Know</value>
+          </text>
+          <text id="/data/timeperiodfdu:label">
+            <value>Time Period for Female Drug Users</value>
+          </text>
+          <text id="/data/timeperiodfdu:hint">
+            <value>Are there particular times when female drug users are more present?</value>
+          </text>
+          <text id="/data/timeperiodfdu:option0">
+            <value>Don't Know</value>
+          </text>
+          <text id="/data/fduhangoutwith:label">
+            <value>Female drug users hang out with...</value>
+          </text>
+          <text id="/data/fduhangoutwith:hint">
+            <value></value>
+          </text>
+          <text id="/data/fduhangoutwith:option0">
+            <value>male drug users only</value>
+          </text>
+          <text id="/data/fduhangoutwith:option1">
+            <value>female drug users only</value>
+          </text>
+          <text id="/data/fduhangoutwith:option2">
+            <value>both male and female drug users</value>
+          </text>
+          <text id="/data/fduhangoutwith:option3">
+            <value>others but not drug users </value>
+          </text>
+          <text id="/data/fduhangoutwith:option4">
+            <value>Don't Know</value>
+          </text>
+          <text id="/data/audiocommentmaledu:label">
+            <value>Comments on Male DUs</value>
+          </text>
+          <text id="/data/audiocommentmaledu:hint">
+            <value>Comment on any other observations about male drug users that you have observed at this area.</value>
+          </text>
+          <text id="/data/audiocommentfemaledu:label">
+            <value>Comments on Female DUs</value>
+          </text>
+          <text id="/data/audiocommentfemaledu:hint">
+            <value>Comment on any other observations about female drug users that you have observed at this area.</value>
+          </text>
+          <text id="/data/cpsafetyrating:label">
+            <value>Safety of Community Point</value>
+          </text>
+          <text id="/data/cpsafetyrating:hint">
+            <value>Comment on the safety of this area for outreach workers and other program staff.</value>
+          </text>
+          <text id="/data/cpsafetyaudiocomment:label">
+            <value>Safety of Community Point</value>
+          </text>
+          <text id="/data/cpsafetyaudiocomment:hint">
+            <value>Comment on the safety of this area for outreach workers and other program staff.</value>
+          </text>
+        </translation>
+      </itext>
+      <bind nodeset="/data/state" required="true()"/>
+      <bind nodeset="/data/Venue" type="int"/>
+      <bind nodeset="/data/street" type="string" required="true()"/>
+      <bind nodeset="/data/venuetype" required="true()"/>
+      <bind nodeset="/data/specifyother" type="string"/>
+      <bind nodeset="/data/venuefound" required="true()"/>
+      <bind nodeset="/data/address" type="string" required="true()"/>
+      <bind nodeset="/data/gpslocal" type="geopoint"/>
+      <bind nodeset="/data/piccpobs" type="binary" required="true()"/>
+      <bind nodeset="/data/picturescpobs/otherpiccpobs" type="binary"/>
+      <bind nodeset="/data/venuetype2" required="true()"/>
+      <bind nodeset="/data/activities" required="true()"/>
+      <bind nodeset="/data/obssyringe" required="true()"/>
+      <bind nodeset="/data/obsdrugtaking" required="true()"/>
+      <bind nodeset="/data/numpeopleobs" type="int" required="true()"/>
+      <bind nodeset="/data/numdrugtakerobs" type="int" required="true()"/>
+      <bind nodeset="/data/numfduobs" type="int" required="true()"/>
+      <bind nodeset="/data/propmale18" required="true()"/>
+      <bind nodeset="/data/propmale1840"/>
+      <bind nodeset="/data/propmale40"/>
+      <bind nodeset="/data/timeperiod" required="true()"/>
+      <bind nodeset="/data/timeperiodfdu" required="true()"/>
+      <bind nodeset="/data/fduhangoutwith" required="true()"/>
+      <bind nodeset="/data/audiocommentmaledu" type="binary"/>
+      <bind nodeset="/data/audiocommentfemaledu" type="binary"/>
+      <bind nodeset="/data/cpsafetyrating" required="true()"/>
+      <bind nodeset="/data/cpsafetyaudiocomment" type="binary"/>
+    </model>
+  </h:head>
+  <h:body>
+    <select1 ref="state">
+      <label ref="jr:itext('/data/state:label')"/>
+      <hint ref="jr:itext('/data/state:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/state:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/state:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/state:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/state:option3')"/>
+        <value/>
+      </item>
+    </select1>
+    <input ref="Venue">
+      <label ref="jr:itext('/data/Venue:label')"/>
+      <hint ref="jr:itext('/data/Venue:hint')"/>
+    </input>
+    <input ref="street">
+      <label ref="jr:itext('/data/street:label')"/>
+      <hint ref="jr:itext('/data/street:hint')"/>
+    </input>
+    <select ref="venuetype">
+      <label ref="jr:itext('/data/venuetype:label')"/>
+      <hint ref="jr:itext('/data/venuetype:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/venuetype:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/venuetype:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/venuetype:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/venuetype:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/venuetype:option4')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/venuetype:option5')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/venuetype:option6')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/venuetype:option7')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/venuetype:option8')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/venuetype:option9')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/venuetype:option10')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/venuetype:option11')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/venuetype:option12')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/venuetype:option13')"/>
+        <value/>
+      </item>
+    </select>
+    <input ref="specifyother">
+      <label ref="jr:itext('/data/specifyother:label')"/>
+      <hint ref="jr:itext('/data/specifyother:hint')"/>
+    </input>
+    <select1 ref="venuefound">
+      <label ref="jr:itext('/data/venuefound:label')"/>
+      <hint ref="jr:itext('/data/venuefound:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/venuefound:option0')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/venuefound:option1')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/venuefound:option2')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/venuefound:option3')"/>
+        <value/>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/venuefound:option4')"/>
+        <value/>
+      </item>
+    </select1>
+    <input ref="address">
+      <label ref="jr:itext('/data/address:label')"/>
+      <hint ref="jr:itext('/data/address:hint')"/>
+    </input>
+    <input ref="gpslocal">
+      <label ref="jr:itext('/data/gpslocal:label')"/>
+      <hint ref="jr:itext('/data/gpslocal:hint')"/>
+    </input>
+    <upload ref="piccpobs" mediatype="image/*">
+      <label ref="jr:itext('/data/piccpobs:label')"/>
+      <hint ref="jr:itext('/data/piccpobs:hint')"/>
+    </upload>
+    <group>
+      <label ref="jr:itext('/data/picturescpobs:label')"/>
+      <repeat nodeset="/data/picturescpobs">
+        <upload ref="picturescpobs/otherpiccpobs" mediatype="image/*">
+          <label ref="jr:itext('/data/picturescpobs/otherpiccpobs:label')"/>
+          <hint ref="jr:itext('/data/picturescpobs/otherpiccpobs:hint')"/>
+        </upload>
+      </repeat>
+    </group>
+    <select1 ref="venuetype2">
+      <label ref="jr:itext('/data/venuetype2:label')"/>
+      <hint ref="jr:itext('/data/venuetype2:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/venuetype2:option0')"/>
+        <value>eat</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/venuetype2:option1')"/>
+        <value>transport</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/venuetype2:option2')"/>
+        <value>hidden</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/venuetype2:option3')"/>
+        <value>events</value>
+      </item>
+    </select1>
+    <select ref="activities">
+      <label ref="jr:itext('/data/activities:label')"/>
+      <hint ref="jr:itext('/data/activities:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/activities:option0')"/>
+        <value>eat</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/activities:option1')"/>
+        <value>socialize</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/activities:option2')"/>
+        <value>buyalcohol</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/activities:option3')"/>
+        <value>bringalcohol</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/activities:option4')"/>
+        <value>tvview</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/activities:option5')"/>
+        <value>vcrview</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/activities:option6')"/>
+        <value>sell_consume_drugs</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/activities:option7')"/>
+        <value>dancing</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/activities:option8')"/>
+        <value>dealers_house</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/activities:option9')"/>
+        <value>live_music</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/activities:option10')"/>
+        <value>recorded_music</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/activities:option11')"/>
+        <value>live_dj</value>
+      </item>
+    </select>
+    <select1 ref="obssyringe">
+      <label ref="jr:itext('/data/obssyringe:label')"/>
+      <hint ref="jr:itext('/data/obssyringe:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/obssyringe:option0')"/>
+        <value>Yes</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/obssyringe:option1')"/>
+        <value>No</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/obssyringe:option2')"/>
+        <value>dontknow</value>
+      </item>
+    </select1>
+    <select1 ref="obsdrugtaking">
+      <label ref="jr:itext('/data/obsdrugtaking:label')"/>
+      <hint ref="jr:itext('/data/obsdrugtaking:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/obsdrugtaking:option0')"/>
+        <value>Yes</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/obsdrugtaking:option1')"/>
+        <value>No</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/obsdrugtaking:option2')"/>
+        <value>dontknow</value>
+      </item>
+    </select1>
+    <input ref="numpeopleobs">
+      <label ref="jr:itext('/data/numpeopleobs:label')"/>
+      <hint ref="jr:itext('/data/numpeopleobs:hint')"/>
+    </input>
+    <input ref="numdrugtakerobs">
+      <label ref="jr:itext('/data/numdrugtakerobs:label')"/>
+      <hint ref="jr:itext('/data/numdrugtakerobs:hint')"/>
+    </input>
+    <input ref="numfduobs">
+      <label ref="jr:itext('/data/numfduobs:label')"/>
+      <hint ref="jr:itext('/data/numfduobs:hint')"/>
+    </input>
+    <select1 ref="propmale18">
+      <label ref="jr:itext('/data/propmale18:label')"/>
+      <hint ref="jr:itext('/data/propmale18:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/propmale18:option0')"/>
+        <value>10</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/propmale18:option1')"/>
+        <value>25</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/propmale18:option2')"/>
+        <value>33</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/propmale18:option3')"/>
+        <value>50</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/propmale18:option4')"/>
+        <value>67</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/propmale18:option5')"/>
+        <value>75</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/propmale18:option6')"/>
+        <value>more</value>
+      </item>
+    </select1>
+    <select1 ref="propmale1840">
+      <label ref="jr:itext('/data/propmale1840:label')"/>
+      <hint ref="jr:itext('/data/propmale1840:hint')"/>
+    </select1>
+    <select1 ref="propmale40">
+      <label ref="jr:itext('/data/propmale40:label')"/>
+      <hint ref="jr:itext('/data/propmale40:hint')"/>
+    </select1>
+    <select1 ref="timeperiod">
+      <label ref="jr:itext('/data/timeperiod:label')"/>
+      <hint ref="jr:itext('/data/timeperiod:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/timeperiod:option0')"/>
+        <value>dontknow</value>
+      </item>
+    </select1>
+    <select1 ref="timeperiodfdu">
+      <label ref="jr:itext('/data/timeperiodfdu:label')"/>
+      <hint ref="jr:itext('/data/timeperiodfdu:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/timeperiodfdu:option0')"/>
+        <value>dontknow</value>
+      </item>
+    </select1>
+    <select1 ref="fduhangoutwith">
+      <label ref="jr:itext('/data/fduhangoutwith:label')"/>
+      <hint ref="jr:itext('/data/fduhangoutwith:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/fduhangoutwith:option0')"/>
+        <value>maledu</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fduhangoutwith:option1')"/>
+        <value>femaledu</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fduhangoutwith:option2')"/>
+        <value>malefemaledu</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fduhangoutwith:option3')"/>
+        <value>othersnondu</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/fduhangoutwith:option4')"/>
+        <value>dontknow</value>
+      </item>
+    </select1>
+    <upload ref="audiocommentmaledu" mediatype="audio/*">
+      <label ref="jr:itext('/data/audiocommentmaledu:label')"/>
+      <hint ref="jr:itext('/data/audiocommentmaledu:hint')"/>
+    </upload>
+    <upload ref="audiocommentfemaledu" mediatype="audio/*">
+      <label ref="jr:itext('/data/audiocommentfemaledu:label')"/>
+      <hint ref="jr:itext('/data/audiocommentfemaledu:hint')"/>
+    </upload>
+    <select1 ref="cpsafetyrating">
+      <label ref="jr:itext('/data/cpsafetyrating:label')"/>
+      <hint ref="jr:itext('/data/cpsafetyrating:hint')"/>
+    </select1>
+    <upload ref="cpsafetyaudiocomment" mediatype="audio/*">
+      <label ref="jr:itext('/data/cpsafetyaudiocomment:label')"/>
+      <hint ref="jr:itext('/data/cpsafetyaudiocomment:hint')"/>
+    </upload>
+  </h:body>
+</h:html>

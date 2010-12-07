@@ -1,0 +1,1411 @@
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa">
+  <h:head>
+    <h:title>Community Point Observation</h:title>
+    <model>
+      <instance>
+        <data id="build_Community-Point-Observation_1291704429">
+          <StartTime/>
+          <EndTime/>
+          <DeviceID/>
+          <SubscriberID/>
+
+          <State/>
+          <LagosLGA/>
+          <KadunaLGA/>
+          <KanoLGA/>
+          <OgunLGA/>
+
+          <VenueNumber/>
+          <AreaName/>
+          <VenueType/>
+          <VenueTypeOther/>
+          <VenueFound/>
+
+          <VenueName/>
+          <VenueAddress/>
+          <Location/>
+          <PicCPObs/>  
+
+          <Activities/>
+          <ObsSyringe/>
+          <ObsDrugTaking/>
+          <NumPeopleObs/>
+          <NumDrugTakerObs/>
+          <NumFDUObs/>        
+
+          <PropMale18/>
+          <PropMale1840/>
+          <PropMale40/>          
+          <PropFemale18/>
+          <PropFemale1840/>
+          <PropFemale40/>          
+
+          <TimePeriod/>
+          <TimePeriodFDU/>
+          <FDUHangoutWith/>
+
+          <AudioCommentMaleDU/>
+          <TextCommentMaleDU/>
+
+          <AudioCommentFemaleDU/>          
+          <TextCommentFemaleDU/>
+
+          <CPSafetyRating/>
+          <CPSafetyAudioComment/>
+          <CPSafetyTextComment/>
+
+        </data>
+      </instance>
+
+      <itext>
+        <translation lang="eng">
+          <text id="/data/VenueType:option0">
+            <value>Drug 'bunker'</value>
+          </text>
+          <text id="/data/VenueType:option1">
+            <value>Pharmacy/Chemist</value>
+          </text>
+          <text id="/data/VenueType:option2">
+            <value>Police Posts</value>
+          </text>
+          <text id="/data/VenueType:option3">
+            <value>Motor Garage</value>
+          </text>
+          <text id="/data/VenueType:option4">
+            <value>Abattoir</value>
+          </text>
+          <text id="/data/VenueType:option5">
+            <value>Walk-in Clinic</value>
+          </text>
+          <text id="/data/VenueType:option6">
+            <value>HIV Testing and Counseling</value>
+          </text>
+          <text id="/data/VenueType:option7">
+            <value>Psychiatric Hospital</value>
+          </text>
+          <text id="/data/VenueType:option8">
+            <value>Area Boys or Gangs Hangout</value>
+          </text>
+          <text id="/data/VenueType:option9">
+            <value>Uncompleted Building</value>
+          </text>
+          <text id="/data/VenueType:option10">
+            <value>Under Bridge / Make Shift Homes</value>
+          </text>
+          <text id="/data/VenueType:option11">
+            <value>Private Hospital/Clinic</value>
+          </text>
+          <text id="/data/VenueType:option12">
+            <value>NGO Center/Office</value>
+          </text>
+          <text id="/data/VenueType:option13">
+            <value>Other Please Specify</value>
+          </text>
+          <text id="/data/VenueFound:option0">
+            <value>Yes and Open</value>
+          </text>
+          <text id="/data/VenueFound:option1">
+            <value>Yes but Closed</value>
+          </text>
+          <text id="/data/VenueFound:option2">
+            <value>Closed Permanently</value>
+          </text>
+          <text id="/data/VenueFound:option3">
+            <value>Venue Not Found</value>
+          </text>
+          <text id="/data/VenueFound:option4">
+            <value>Duplicate Venue</value>
+          </text>
+          <text id="/data/Activities:label">
+            <value>What types of Activities take place here?</value>
+          </text>
+          <text id="/data/Activities:hint">
+            <value/>
+          </text>
+          <text id="/data/Activities:option0">
+            <value>People buy food and eat</value>
+          </text>
+          <text id="/data/Activities:option1">
+            <value>People socialize for an hour or more</value>
+          </text>
+          <text id="/data/Activities:option2">
+            <value>People can buy beer/alcohol to consume on-site</value>
+          </text>
+          <text id="/data/Activities:option3">
+            <value>People bring beer/alcohol to consume</value>
+          </text>
+          <text id="/data/Activities:option4">
+            <value>TV viewing</value>
+          </text>
+          <text id="/data/Activities:option5">
+            <value>VCR or CD video viewing</value>
+          </text>
+          <text id="/data/Activities:option6">
+            <value>Sell or Consume Drugs</value>
+          </text>
+          <text id="/data/Activities:option7">
+            <value>Individual/group or couple dancing </value>
+          </text>
+          <text id="/data/Activities:option8">
+            <value>Dealers house </value>
+          </text>
+          <text id="/data/Activities:option9">
+            <value>Live Music</value>
+          </text>
+          <text id="/data/Activities:option10">
+            <value>Recorded Music</value>
+          </text>
+          <text id="/data/Activities:option11">
+            <value>Live DJ</value>
+          </text>
+        </translation>
+      </itext>
+
+      <!-- binds allow us to add properties to the questions, like data types, skip logic, etc.-->
+      <bind nodeset="/data/StartTime" type="dateTime" jr:preload="timestamp" jr:preloadParams="start"/>
+      <bind nodeset="/data/EndTime" type="dateTime" jr:preload="timestamp" jr:preloadParams="end"/>
+      <bind nodeset="/data/DeviceID" type="string" jr:preload="property" jr:preloadParams="deviceid"/>
+      <bind nodeset="/data/SubscriberID" type="string" jr:preload="property" jr:preloadParams="subscriberid"/>      
+
+      <bind nodeset="/data/State" required="true()"/>
+      <bind nodeset="/data/LagosLGA" relevant="/data/State = 'Lagos'"/>
+      <bind nodeset="/data/KadunaLGA" relevant="/data/State = 'Kaduna'"/>
+      <bind nodeset="/data/KanoLGA" relevant="/data/State = 'Kano'"/>
+      <bind nodeset="/data/OgunLGA" relevant="/data/State = 'Ogun'"/>
+
+      <bind nodeset="/data/VenueNumber" type="string"/>
+      <bind nodeset="/data/AreaName" type="string"/>
+      <bind nodeset="/data/VenueType" required="true()"/>
+      <bind nodeset="/data/VenueTypeOther" type="string" relevant="/data/VenueType = 'Other'"/>
+      <bind nodeset="/data/VenueFound" required="true()"/>
+
+      <bind nodeset="/data/VenueName" type="string" relevant="/data/VenueFound = 'YesOpen'"/>
+      <bind nodeset="/data/VenueAddress" type="string" relevant="/data/VenueFound = 'YesOpen'"/>
+      <bind nodeset="/data/Location" type="geopoint"/>
+      <bind nodeset="/data/PicCPObs" type="binary" required="true()" relevant="/data/VenueFound = 'YesOpen'"/>
+
+      <bind nodeset="/data/Activities" required="true()" relevant="/data/VenueFound = 'YesOpen'"/>
+      <bind nodeset="/data/ObsSyringe" required="true()" relevant="/data/VenueFound = 'YesOpen'"/>
+      <bind nodeset="/data/ObsDrugTaking" required="true()" relevant="/data/VenueFound = 'YesOpen'"/>
+      <bind nodeset="/data/NumPeopleObs" type="int" required="true()" relevant="/data/VenueFound = 'YesOpen'"/>
+      <bind nodeset="/data/NumDrugTakerObs" type="int" required="true()" relevant="/data/VenueFound = 'YesOpen'"/>
+      <bind nodeset="/data/NumFDUObs" type="int" required="true()" relevant="/data/VenueFound = 'YesOpen'"/>
+
+      <bind nodeset="/data/PropMale18" required="true()" relevant="/data/VenueFound = 'YesOpen'"/>
+      <bind nodeset="/data/PropMale1840" required="true()" relevant="/data/VenueFound = 'YesOpen'"/>
+      <bind nodeset="/data/PropMale40" required="true()" relevant="/data/VenueFound = 'YesOpen'"/>      
+      <bind nodeset="/data/PropFemale18" required="true()" relevant="/data/VenueFound = 'YesOpen'"/>
+      <bind nodeset="/data/PropFemale1840" required="true()" relevant="/data/VenueFound = 'YesOpen'"/>
+      <bind nodeset="/data/PropFemale40" required="true()" relevant="/data/VenueFound = 'YesOpen'"/>
+
+      <bind nodeset="/data/TimePeriod" required="true()" relevant="/data/VenueFound = 'YesOpen'"/>
+      <bind nodeset="/data/TimePeriodFDU" required="true()" relevant="/data/VenueFound = 'YesOpen'"/>
+      <bind nodeset="/data/FDUHangoutWith" required="true()" relevant="/data/VenueFound = 'YesOpen'"/>
+      
+      <bind nodeset="/data/AudioCommentMaleDU" type="binary" relevant="/data/VenueFound = 'YesOpen'"/>
+      <bind nodeset="/data/TextCommentMaleDU" type="text" relevant="/data/VenueFound = 'YesOpen'"/>
+      
+      <bind nodeset="/data/AudioCommentFemaleDU" type="binary" relevant="/data/VenueFound = 'YesOpen'"/>
+      <bind nodeset="/data/TextCommentFemaleDU" type="text" relevant="/data/VenueFound = 'YesOpen'"/>
+      
+      <bind nodeset="/data/CPSafetyRating" required="true()" relevant="/data/VenueFound = 'YesOpen'"/>
+      
+      <bind nodeset="/data/CPSafetyAudioComment" type="binary" relevant="/data/VenueFound = 'YesOpen'"/>    
+      <bind nodeset="/data/CPSafetyTextComment" type="text" relevant="/data/VenueFound = 'YesOpen'"/>    
+
+    </model>
+  </h:head>
+  <h:body>
+    <select1 ref="State">
+      <label>Name of State</label>
+      <hint></hint>
+      <item>
+        <label>Lagos</label>
+        <value>Lagos</value>
+      </item>
+      <item>
+        <label>Kaduna</label>
+        <value>Kaduna</value>
+      </item>
+      <item>
+        <label>Kano</label>
+        <value>Kano</value>
+      </item>
+      <item>
+        <label>Ogun</label>
+        <value>Ogun</value>
+      </item>
+    </select1>
+    <select1 ref="LagosLGA">
+      <label>Local Government Area (LGA)</label>
+      <hint>In which LGA is the Facility located?</hint>
+      <item>
+        <label>Agbado/Oke-Odo</label>
+        <value>Agbado/Oke-Odo</value>
+      </item>
+      <item>
+        <label>Agboyi/Ketu</label>
+        <value>Agboyi/Ketu</value>
+      </item>
+      <item>
+        <label>Agege</label>
+        <value>Agege</value>
+      </item>
+      <item>
+        <label>Ajeromi LGA</label>
+        <value>Ajeromi LGA</value>
+      </item>
+      <item>
+        <label>Alimosho</label>
+        <value>Alimosho</value>
+      </item>
+      <item>
+        <label>Apapa</label>
+        <value>Apapa</value>
+      </item>
+      <item>
+        <label>Apapa-Iganmu</label>
+        <value>Apapa-Iganmu</value>
+      </item>
+      <item>
+        <label>Ayobo/Ipaja</label>
+        <value>Ayobo/Ipaja</value>
+      </item>
+      <item>
+        <label>Badagry West</label>
+        <value>Badagry West</value>
+      </item>
+      <item>
+        <label>Badagry</label>
+        <value>Badagry</value>
+      </item>
+      <item>
+        <label>Bariga</label>
+        <value>Bariga</value>
+      </item>
+      <item>
+        <label>Coker Aguda</label>
+        <value>Coker Aguda</value>
+      </item>
+      <item>
+        <label>Egbe Idimu</label>
+        <value>Egbe Idimu</value>
+      </item>
+      <item>
+        <label>Ejigbo</label>
+        <value>Ejigbo</value>
+      </item>
+      <item>
+        <label>Epe</label>
+        <value>Epe</value>
+      </item>
+      <item>
+        <label>Eredo</label>
+        <value>Eredo</value>
+      </item>
+      <item>
+        <label>Eti Osa East</label>
+        <value>Eti Osa East</value>
+      </item>
+      <item>
+        <label>Eti Osa West</label>
+        <value>Eti Osa West</value>
+      </item>
+      <item>
+        <label>Iba</label>
+        <value>Iba</value>
+      </item>
+      <item>
+        <label>Isolo</label>
+        <value>Isolo</value>
+      </item>
+      <item>
+        <label>Imota</label>
+        <value>Imota</value>
+      </item>
+      <item>
+        <label>Ikoyi</label>
+        <value>Ikoyi</value>
+      </item>
+      <item>
+        <label>Ibeju</label>
+        <value>Ibeju</value>
+      </item>
+      <item>
+        <label>Ifako Ijaiye</label>
+        <value>Ifako Ijaiye</value>
+      </item>
+      <item>
+        <label>Ifelodun</label>
+        <value>Ifelodun</value>
+      </item>
+      <item>
+        <label>Igando/Ikotun</label>
+        <value>Igando/Ikotun</value>
+      </item>
+      <item>
+        <label>Igbogbo/Bayeku</label>
+        <value>Igbogbo/Bayeku</value>
+      </item>
+      <item>
+        <label>Ijede</label>
+        <value>Ijede</value>
+      </item>
+      <item>
+        <label>Ikeja</label>
+        <value>Ikeja</value>
+      </item>
+      <item>
+        <label>Ikorodu North</label>
+        <value>Ikorodu North</value>
+      </item>
+      <item>
+        <label>Ikorodu West</label>
+        <value>Ikorodu West</value>
+      </item>
+      <item>
+        <label>Ikosi Ejinrin</label>
+        <value>Ikosi Ejinrin</value>
+      </item>
+      <item>
+        <label>Ikorodu</label>
+        <value>Ikorodu</value>
+      </item>
+      <item>
+        <label>Iru/Victoria Island</label>
+        <value>Iru/Victoria Island</value>
+      </item>
+      <item>
+        <label>Itire Ikate</label>
+        <value>Itire Ikate</value>
+      </item>
+      <item>
+        <label>Kosofe</label>
+        <value>Kosofe</value>
+      </item>
+      <item>
+        <label>Lagos Island West</label>
+        <value>Lagos Island West</value>
+      </item>
+      <item>
+        <label>Lagos Island East</label>
+        <value>Lagos Island East</value>
+      </item>
+      <item>
+        <label>Lagos Mainland</label>
+        <value>Lagos Mainland</value>
+      </item>
+      <item>
+        <label>Lekki</label>
+        <value>Lekki</value>
+      </item>
+      <item>
+        <label>Mosan/Okunola</label>
+        <value>Mosan/Okunola</value>
+      </item>
+      <item>
+        <label>Mushin</label>
+        <value>Mushin</value>
+      </item>
+      <item>
+        <label>Odi Olowo/Ojuwoye</label>
+        <value>Odi Olowo/Ojuwoye</value>
+      </item>
+      <item>
+        <label>Ojo</label>
+        <value>Ojo</value>
+      </item>
+      <item>
+        <label>Ojodu</label>
+        <value>Ojodu</value>
+      </item>
+      <item>
+        <label>Ojokoro</label>
+        <value>Ojokoro</value>
+      </item>
+      <item>
+        <label>Olorunda</label>
+        <value>Olorunda</value>
+      </item>
+      <item>
+        <label>Onigbongbo</label>
+        <value>Onigbongbo</value>
+      </item>
+      <item>
+        <label>Oriade</label>
+        <value>Oriade</value>
+      </item>
+      <item>
+        <label>Orile Agege</label>
+        <value>Orile Agege</value>
+      </item>
+      <item>
+        <label>Oshodi</label>
+        <value>Oshodi</value>
+      </item>
+      <item>
+        <label>Oto-Awori</label>
+        <value>Oto-Awori</value>
+      </item>
+      <item>
+        <label>Shomolu</label>
+        <value>Shomolu</value>
+      </item>
+      <item>
+        <label>Surulere</label>
+        <value>Surulere</value>
+      </item>
+      <item>
+        <label>Yaba</label>
+        <value>Yaba</value>
+      </item>
+      <item>
+        <label>Ikorodu West</label>
+        <value>Ikorodu West</value>
+      </item>
+    </select1>
+    <select1 ref="KadunaLGA">
+      <label>Local Government Area (LGA)</label>
+      <hint>In which LGA is the Facility located?</hint>
+      <item>
+        <label>Birnin Gwari</label>
+        <value>Birnin Gwari</value>
+      </item>
+      <item>
+        <label>Chikun</label>
+        <value>Chikun</value>
+      </item>
+      <item>
+        <label>Giwa</label>
+        <value>Giwa</value>
+      </item>
+      <item>
+        <label>Igabi</label>
+        <value>Igabi</value>
+      </item>
+      <item>
+        <label>Ikara</label>
+        <value>Ikara</value>
+      </item>
+      <item>
+        <label>Jaba</label>
+        <value>Jaba</value>
+      </item>
+      <item>
+        <label>Jema'a</label>
+        <value>Jema'a</value>
+      </item>
+      <item>
+        <label>Kachia</label>
+        <value>Kachia</value>
+      </item>
+      <item>
+        <label>Kaduna North</label>
+        <value>Kaduna North</value>
+      </item>
+      <item>
+        <label>Kaduna South</label>
+        <value>Kaduna South</value>
+      </item>
+      <item>
+        <label>Kagarko</label>
+        <value>Kagarko</value>
+      </item>
+      <item>
+        <label>Kajuru</label>
+        <value>Kajuru</value>
+      </item>
+      <item>
+        <label>Kaura</label>
+        <value>Kaura</value>
+      </item>
+      <item>
+        <label>Kauru</label>
+        <value>Kauru</value>
+      </item>
+      <item>
+        <label>Kubau</label>
+        <value>Kubau</value>
+      </item>
+      <item>
+        <label>Kudan</label>
+        <value>Kudan</value>
+      </item>
+      <item>
+        <label>Lere</label>
+        <value>Lere</value>
+      </item>
+      <item>
+        <label>Makarfi</label>
+        <value>Makarfi</value>
+      </item>
+      <item>
+        <label>Sabon Gari</label>
+        <value>Sabon Gari</value>
+      </item>
+      <item>
+        <label>Sanga</label>
+        <value>Sanga</value>
+      </item>
+      <item>
+        <label>Soba</label>
+        <value>Soba</value>
+      </item>
+      <item>
+        <label>Zangon Kataf</label>
+        <value>Zangon Kataf</value>
+      </item>
+      <item>
+        <label>Zaria</label>
+        <value>Zaria</value>
+      </item>     
+    </select1>
+    <select1 ref="KanoLGA">
+      <label>Local Government Area (LGA)</label>
+      <hint>In which LGA is the Facility located?</hint>
+      <item>
+        <label>Ajingi</label> 
+        <value>Ajingi</value> 
+      </item>
+      <item>
+        <label>Albasu</label> 
+        <value>Albasu</value> 
+      </item>
+      <item>
+        <label>Bagwai</label> 
+        <value>Bagwai</value> 
+      </item>
+      <item>
+        <label>Bebeji</label> 
+        <value>Bebeji</value> 
+      </item>
+      <item>
+        <label>Bichi</label> 
+        <value>Bichi</value> 
+      </item>
+      <item>
+        <label>Bunkure</label> 
+        <value>Bunkure</value> 
+      </item>
+      <item>
+        <label>Dala</label> 
+        <value>Dala</value> 
+      </item>
+      <item>
+        <label>Dambatta</label> 
+        <value>Dambatta</value> 
+      </item>
+      <item>
+        <label>Dawakin Kudu</label> 
+        <value>Dawakin Kudu</value> 
+      </item>
+      <item>
+        <label>Dawakin Tofa</label> 
+        <value>Dawakin Tofa</value> 
+      </item>
+      <item>
+        <label>Doguwa</label> 
+        <value>Doguwa</value> 
+      </item>
+      <item>
+        <label>Fagge</label> 
+        <value>Fagge</value> 
+      </item>
+      <item>
+        <label>Gabasawa</label> 
+        <value>Gabasawa</value> 
+      </item>
+      <item>
+        <label>Garko</label> 
+        <value>Garko</value> 
+      </item>
+      <item>
+        <label>Garum Mallam</label> 
+        <value>Garum Mallam</value> 
+      </item>
+      <item>
+        <label>Gaya</label> 
+        <value>Gaya</value> 
+      </item>
+      <item>
+        <label>Gezawa</label> 
+        <value>Gezawa</value> 
+      </item>
+      <item>
+        <label>Gwale</label> 
+        <value>Gwale</value> 
+      </item>
+      <item>
+        <label>Gwarzo</label> 
+        <value>Gwarzo</value> 
+      </item>
+      <item>
+        <label>Kabo</label> 
+        <value>Kabo</value> 
+      </item>
+      <item>
+        <label>Kano Municipal</label> 
+        <value>Kano Municipal</value> 
+      </item>
+      <item>
+        <label>Karaye</label> 
+        <value>Karaye</value> 
+      </item>
+      <item>
+        <label>Kibiya</label> 
+        <value>Kibiya</value> 
+      </item>
+      <item>
+        <label>Kiru</label> 
+        <value>Kiru</value> 
+      </item>
+      <item>
+        <label>Kumbotso</label> 
+        <value>Kumbotso</value> 
+      </item>
+      <item>
+        <label>Kunchi</label> 
+        <value>Kunchi</value> 
+      </item>
+      <item>
+        <label>Kura</label> 
+        <value>Kura</value> 
+      </item>
+      <item>
+        <label>Madobi</label> 
+        <value>Madobi</value> 
+      </item>
+      <item>
+        <label>Makoda</label> 
+        <value>Makoda</value> 
+      </item>
+      <item>
+        <label>Minjibir</label> 
+        <value>Minjibir</value> 
+      </item>
+      <item>
+        <label>Nasarawa</label> 
+        <value>Nasarawa</value> 
+      </item>
+      <item>
+        <label>Rano</label> 
+        <value>Rano</value> 
+      </item>
+      <item>
+        <label>Rimin Gado</label> 
+        <value>Rimin Gado</value> 
+      </item>
+      <item>
+        <label>Rogo</label> 
+        <value>Rogo</value> 
+      </item>
+      <item>
+        <label>Shanono</label> 
+        <value>Shanono</value> 
+      </item>
+      <item>
+        <label>Sumaila</label> 
+        <value>Sumaila</value> 
+      </item>
+      <item>
+        <label>Takali</label> 
+        <value>Takali</value> 
+      </item>
+      <item>
+        <label>Tarauni</label> 
+        <value>Tarauni</value> 
+      </item>
+      <item>
+        <label>Tofa</label> 
+        <value>Tofa</value> 
+      </item>
+      <item>
+        <label>Tsanyawa</label> 
+        <value>Tsanyawa</value> 
+      </item>
+      <item>
+        <label>Tudun Wada</label> 
+        <value>Tudun Wada</value> 
+      </item>
+      <item>
+        <label>Ungogo</label> 
+        <value>Ungogo</value> 
+      </item>
+      <item>
+        <label>Warawa</label> 
+        <value>Warawa</value> 
+      </item>
+      <item>
+        <label>Wudil</label> 
+        <value>Wudil</value> 
+      </item>
+    </select1>
+    <select1 ref="OgunLGA">
+      <label>Local Government Area (LGA)</label>
+      <hint>In which LGA is the Facility located?</hint>
+      <item>
+        <label>Abeokuta North</label>
+        <value>Abeokuta North</value>
+      </item>
+      <item>
+        <label>Abeokuta South</label>
+        <value>Abeokuta South</value>
+      </item>
+      <item>
+        <label>Ado-Odo/Ota</label>
+        <value>Ado-Odo/Ota</value>
+      </item>
+      <item>
+        <label>Ewekoro</label>
+        <value>Ewekoro</value>
+      </item>
+      <item>
+        <label>Ifo</label>
+        <value>Ifo</value>
+      </item>
+      <item>
+        <label>Ijebu East</label>
+        <value>Ijebu East</value>
+      </item>
+      <item>
+        <label>Ijebu North</label>
+        <value>Ijebu North</value>
+      </item>
+      <item>
+        <label>Ijebu North East</label>
+        <value>Ijebu North East</value>
+      </item>
+      <item>
+        <label>Ijebu Ode</label>
+        <value>Ijebu Ode</value>
+      </item>
+      <item>
+        <label>Ikenne</label>
+        <value>Ikenne</value>
+      </item>
+      <item>
+        <label>Imeko Afon</label>
+        <value>Imeko Afon</value>
+      </item>
+      <item>
+        <label>Ipokia</label>
+        <value>Ipokia</value>
+      </item>
+      <item>
+        <label>Obafemi Owode</label>
+        <value>Obafemi Owode</value>
+      </item>
+      <item>
+        <label>Odogbolu</label>
+        <value>Odogbolu</value>
+      </item>
+      <item>
+        <label>Odeda</label>
+        <value>Odeda</value>
+      </item>
+      <item>
+        <label>Ogun Waterside</label>
+        <value>Ogun Waterside</value>
+      </item>
+      <item>
+        <label>Remo North</label>
+        <value>Remo North</value>
+      </item>
+      <item>
+        <label>Sagamu or Shagamu</label>
+        <value>Sagamu</value>
+      </item>
+      <item>
+        <label>Yewa North formerly Egbado North</label>
+        <value>Yewa North</value>
+      </item>
+      <item>
+        <label>Yewa South formerly Egbado South</label>
+        <value>Yewa South</value>
+      </item>
+    </select1>
+
+    <input ref="VenueNumber">
+      <label>Venue Number</label>
+      <hint></hint>
+    </input>
+    <input ref="AreaName">
+      <label>Name of Street/Area</label>
+      <hint>What is the name of Street/Area where venue is located?</hint>
+    </input>
+    <select1 ref="VenueType">
+      <label>Type of Venue</label>
+      <hint></hint>
+      <item>
+        <label ref="jr:itext('/data/VenueType:option0')"/>
+        <value>DrugBunker</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/VenueType:option1')"/>
+        <value>PharmacyChemist</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/VenueType:option2')"/>
+        <value>PolicePosts</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/VenueType:option3')"/>
+        <value>MotorGarage</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/VenueType:option4')"/>
+        <value>Abattoir</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/VenueType:option5')"/>
+        <value>WalkinClinic</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/VenueType:option6')"/>
+        <value>HIVCT</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/VenueType:option7')"/>
+        <value>PsycHospital</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/VenueType:option8')"/>
+        <value>GangsHangout</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/VenueType:option9')"/>
+        <value>UncompletedBuilding</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/VenueType:option10')"/>
+        <value>UnderBridge</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/VenueType:option11')"/>
+        <value>PrivateHospital</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/VenueType:option12')"/>
+        <value>NGO</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/VenueType:option13')"/>
+        <value>Other</value>
+      </item>
+    </select1>
+    <input ref="VenueTypeOther">
+      <label>Type of Venue</label>
+      <hint>Please Specify:</hint>
+    </input> 
+    <select1 ref="VenueFound">
+      <label>Was the Venue Found?</label>
+      <hint></hint>
+      <item>
+        <label ref="jr:itext('/data/VenueFound:option0')"/>
+        <value>YesOpen</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/VenueFound:option1')"/>
+        <value>YesClosed</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/VenueFound:option2')"/>
+        <value>ClosePermanent</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/VenueFound:option3')"/>
+        <value>NotFound</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/VenueFound:option4')"/>
+        <value>DuplicateVenue</value>
+      </item>
+    </select1>
+    <input ref="VenueName">
+      <label>Name of Venue</label>
+      <hint>Proper/Correct Name of Venue</hint>
+    </input>
+    <input ref="VenueAddress">
+      <label>Address of Venue</label>
+      <hint>Correct Address of Venue</hint>
+    </input>
+    <input ref="Location">
+      <label>Location of Venue</label>
+      <hint>Take the GPS reading near the entrance to the venue.</hint>
+    </input>
+    <upload ref="PicCPObs" mediatype="image/*">
+      <label>Community Point Picture</label>
+      <hint></hint>
+    </upload>
+    <select ref="Activities">
+      <label ref="jr:itext('/data/Activities:label')"/>
+      <hint ref="jr:itext('/data/Activities:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/Activities:option0')"/>
+        <value>eat</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/Activities:option1')"/>
+        <value>socialize</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/Activities:option2')"/>
+        <value>buyalcohol</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/Activities:option3')"/>
+        <value>bringalcohol</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/Activities:option4')"/>
+        <value>tvview</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/Activities:option5')"/>
+        <value>vcrview</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/Activities:option6')"/>
+        <value>sell_consume_drugs</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/Activities:option7')"/>
+        <value>dancing</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/Activities:option8')"/>
+        <value>dealers_house</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/Activities:option9')"/>
+        <value>live_music</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/Activities:option10')"/>
+        <value>recorded_music</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/Activities:option11')"/>
+        <value>live_dj</value>
+      </item>
+    </select>
+    <select1 ref="ObsSyringe">
+      <label>Syringes Observed</label>
+      <hint>Did you observe any used syringes lying around inside or outside of this place during your observation time/ walk-about?</hint>
+      <item>
+        <label>Yes</label>
+        <value>Yes</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>No</value>
+      </item>
+      <item>
+        <label>Don't Know</label>
+        <value>dontknow</value>
+      </item>
+    </select1>
+    <select1 ref="ObsDrugTaking">
+      <label>Drug Taking Observed</label>
+      <hint>Did you observe any people taking drugs either (smoking, sniffing, injecting or eating) here today?</hint>
+      <item>
+        <label>Yes</label>
+        <value>Yes</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>No</value>
+      </item>
+      <item>
+        <label>Don't Know</label>
+        <value>dontknow</value>
+      </item>
+    </select1>
+    <input ref="NumPeopleObs">
+      <label>Approximate Individuals Observed</label>
+      <hint>Approximately how many people (men and women) are here during the time of your observation?  This includes people who come here to socialize and people who come here for other reasons.</hint>
+    </input>
+    <input ref="NumDrugTakerObs">
+      <label>Drug Takers Observed</label>
+      <hint>How many drug users (injectors and non-injectors) do you think you observed around this area during your observation period?</hint>
+    </input>
+    <input ref="NumFDUObs">
+      <label>Female Drug Users Observed</label>
+      <hint>Of those, about how many of them were female drug users?</hint>
+    </input>
+
+    <select1 ref="PropMale18">
+      <label>MALE Drug Users</label>
+      <hint>What proportion of the MALE drug users are &lt;18 years of age</hint>
+      <item>
+        <label>0%</label>
+        <value>0</value>
+      </item>
+      <item>
+        <label>5%</label>
+        <value>5</value>
+      </item>
+      <item>
+        <label>10%</label>
+        <value>10</value>
+      </item>
+      <item>
+        <label>1/4 25%</label>
+        <value>25</value>
+      </item>
+      <item>
+        <label>1/3 (33%)</label>
+        <value>33</value>
+      </item>
+      <item>
+        <label>1/2 (50%)</label>
+        <value>50</value>
+      </item>
+      <item>
+        <label>2/3 (67%)</label>
+        <value>67</value>
+      </item>
+      <item>
+        <label>3/4 (75%)</label>
+        <value>75</value>
+      </item>
+      <item>
+        <label>80% or more</label>
+        <value>more</value>
+      </item>
+    </select1>
+    <select1 ref="PropMale1840">
+      <label>MALE Drug Users</label>
+      <hint>What proportion of the MALE drug users are 18-40 years of age</hint>
+      <item>
+        <label>0%</label>
+        <value>0</value>
+      </item>
+      <item>
+        <label>5%</label>
+        <value>5</value>
+      </item>
+      <item>
+        <label>10%</label>
+        <value>10</value>
+      </item>
+      <item>
+        <label>1/4 25%</label>
+        <value>25</value>
+      </item>
+      <item>
+        <label>1/3 (33%)</label>
+        <value>33</value>
+      </item>
+      <item>
+        <label>1/2 (50%)</label>
+        <value>50</value>
+      </item>
+      <item>
+        <label>2/3 (67%)</label>
+        <value>67</value>
+      </item>
+      <item>
+        <label>3/4 (75%)</label>
+        <value>75</value>
+      </item>
+      <item>
+        <label>80% or more</label>
+        <value>more</value>
+      </item>
+    </select1>
+    <select1 ref="PropMale40">
+      <label>MALE Drug Users</label>
+      <hint>What proportion of the MALE drug users are &gt;40 years of age</hint>
+      <item>
+        <label>0%</label>
+        <value>0</value>
+      </item>
+      <item>
+        <label>5%</label>
+        <value>5</value>
+      </item>
+      <item>
+        <label>10%</label>
+        <value>10</value>
+      </item>
+      <item>
+        <label>1/4 25%</label>
+        <value>25</value>
+      </item>
+      <item>
+        <label>1/3 (33%)</label>
+        <value>33</value>
+      </item>
+      <item>
+        <label>1/2 (50%)</label>
+        <value>50</value>
+      </item>
+      <item>
+        <label>2/3 (67%)</label>
+        <value>67</value>
+      </item>
+      <item>
+        <label>3/4 (75%)</label>
+        <value>75</value>
+      </item>
+      <item>
+        <label>80% or more</label>
+        <value>more</value>
+      </item>
+    </select1>
+    <select1 ref="PropFemale18">
+      <label>FEMALE Drug Users</label>
+      <hint>What proportion of the FEMALE drug users are &lt;18 years of age</hint>
+      <item>
+        <label>0%</label>
+        <value>0</value>
+      </item>
+      <item>
+        <label>5%</label>
+        <value>5</value>
+      </item>
+      <item>
+        <label>10%</label>
+        <value>10</value>
+      </item>
+      <item>
+        <label>1/4 25%</label>
+        <value>25</value>
+      </item>
+      <item>
+        <label>1/3 (33%)</label>
+        <value>33</value>
+      </item>
+      <item>
+        <label>1/2 (50%)</label>
+        <value>50</value>
+      </item>
+      <item>
+        <label>2/3 (67%)</label>
+        <value>67</value>
+      </item>
+      <item>
+        <label>3/4 (75%)</label>
+        <value>75</value>
+      </item>
+      <item>
+        <label>80% or more</label>
+        <value>more</value>
+      </item>
+    </select1>
+    <select1 ref="PropFemale1840">
+      <label>FEMALE Drug Users</label>
+      <hint>What proportion of the FEMALE drug users are 18-40 years of age</hint>
+      <item>
+        <label>0%</label>
+        <value>0</value>
+      </item>
+      <item>
+        <label>5%</label>
+        <value>5</value>
+      </item>
+      <item>
+        <label>10%</label>
+        <value>10</value>
+      </item>
+      <item>
+        <label>1/4 25%</label>
+        <value>25</value>
+      </item>
+      <item>
+        <label>1/3 (33%)</label>
+        <value>33</value>
+      </item>
+      <item>
+        <label>1/2 (50%)</label>
+        <value>50</value>
+      </item>
+      <item>
+        <label>2/3 (67%)</label>
+        <value>67</value>
+      </item>
+      <item>
+        <label>3/4 (75%)</label>
+        <value>75</value>
+      </item>
+      <item>
+        <label>80% or more</label>
+        <value>more</value>
+      </item>
+    </select1>
+    <select1 ref="PropFemale40">
+      <label>FEMALE Drug Users</label>
+      <hint>What proportion of the FEMALE drug users are &gt;40 years of age</hint>
+      <item>
+        <label>0%</label>
+        <value>0</value>
+      </item>
+      <item>
+        <label>5%</label>
+        <value>5</value>
+      </item>
+      <item>
+        <label>10%</label>
+        <value>10</value>
+      </item>
+      <item>
+        <label>1/4 25%</label>
+        <value>25</value>
+      </item>
+      <item>
+        <label>1/3 (33%)</label>
+        <value>33</value>
+      </item>
+      <item>
+        <label>1/2 (50%)</label>
+        <value>50</value>
+      </item>
+      <item>
+        <label>2/3 (67%)</label>
+        <value>67</value>
+      </item>
+      <item>
+        <label>3/4 (75%)</label>
+        <value>75</value>
+      </item>
+      <item>
+        <label>80% or more</label>
+        <value>more</value>
+      </item>
+    </select1>
+    <select1 ref="TimePeriod">
+      <label>Time Period</label>
+      <hint>What is the time period that we would find the most drug users hanging out around here?</hint>
+      <item>
+        <label>Early Morning (1am - 5am)</label>
+        <value>EarlyMorning</value>
+      </item>
+      <item>
+        <label>Morning (7am - 11am)</label>
+        <value>Morning</value>
+      </item>
+      <item>
+        <label>Afternoon (12pm - 5pm)</label>
+        <value>Afternoon</value>
+      </item>
+      <item>
+        <label>Evening (6pm - 9pm)</label>
+        <value>Evening</value>
+      </item>
+      <item>
+        <label>Late Evening (10pm - 1am)</label>
+        <value>LateEvening</value>
+      </item>
+      <item>
+        <label>Don't Know</label>
+        <value>dontknow</value>
+      </item>
+    </select1>
+    <select1 ref="TimePeriodFDU">
+      <label>Time Period for Female Drug Users</label>
+      <hint>Are there particular times when female drug users are more present?</hint>
+      <item>
+        <label>Early Morning (1am - 5am)</label>
+        <value>EarlyMorning</value>
+      </item>
+      <item>
+        <label>Morning (7am - 11am)</label>
+        <value>Morning</value>
+      </item>
+      <item>
+        <label>Afternoon (12pm - 5pm)</label>
+        <value>Afternoon</value>
+      </item>
+      <item>
+        <label>Evening (6pm - 9pm)</label>
+        <value>Evening</value>
+      </item>
+      <item>
+        <label>Late Evening (10pm - 1am)</label>
+        <value>LateEvening</value>
+      </item>
+      <item>
+        <label>Don't Know</label>
+        <value>dontknow</value>
+      </item>
+    </select1>
+    <select1 ref="FDUHangoutWith">
+      <label>Female drug users hang out with...</label>
+      <hint></hint>
+      <item>
+        <label>male drug users only</label>
+        <value>maledu</value>
+      </item>
+      <item>
+        <label>female drug users only</label>
+        <value>femaledu</value>
+      </item>
+      <item>
+        <label>both male and female drug users</label>
+        <value>malefemaledu</value>
+      </item>
+      <item>
+        <label>others but not drug users</label>
+        <value>othersnondu</value>
+      </item>
+      <item>
+        <label>Don't Know</label>
+        <value>dontknow</value>
+      </item>
+    </select1>
+
+    <upload ref="AudioCommentMaleDU" mediatype="audio/*">
+      <label>Comments MALE Drug Users</label>
+      <hint>Comment on any other observations about male drug users that you have observed at this area.</hint>
+    </upload>
+    <input ref="TextCommentMaleDU">
+      <label>Comments MALE Drug Users</label>
+      <hint>Comment on any other observations about male drug users that you have observed at this area.</hint>
+    </input>
+    <upload ref="AudioCommentFemaleDU" mediatype="audio/*">
+      <label>Comments FEMALE Drug Users</label>
+      <hint>Comment on any other observations about female drug users that you have observed at this area.</hint>
+    </upload>
+    <input ref="TextCommentFemaleDU">
+      <label>Comments FEMALE Drug Users</label>
+      <hint>Comment on any other observations about female drug users that you have observed at this area.</hint>
+    </input>
+    <select1 ref="CPSafetyRating">
+      <label>Safety Rating</label>
+      <hint>How do you rate the safety of this area for outreach workers and other program staff</hint>
+      <item>
+        <label>Very Safe (1)</label>
+        <value>VerySafe</value>
+      </item>
+      <item>
+        <label>Safe (2)</label>
+        <value>Safe</value>
+      </item>
+      <item>
+        <label>Average/Neutral (3)</label>
+        <value>Average</value>
+      </item>
+      <item>
+        <label>Dangerous (4)</label>
+        <value>Dangerous</value>
+      </item>
+      <item>
+        <label>Very Dangerous (5)</label>
+        <value>VeryDangerous</value>
+      </item>
+      <item>
+        <label>Don't Know</label>
+        <value>dontknow</value>
+      </item>
+    </select1>
+    <upload ref="CPSafetyAudioComment" mediatype="audio/*">
+      <label>Safety Comments</label>
+      <hint>Comment on the safety of this area for outreach workers and other program staff.</hint>
+    </upload>  
+    <input ref="CPSafetyTextComment">
+      <label>Safety Comments</label>
+      <hint>Comment on the safety of this area for outreach workers and other program staff.</hint>
+    </input>  
+  </h:body>
+</h:html>
