@@ -3,7 +3,7 @@
     <h:title>Community Point Observation 2</h:title>
     <model>
       <instance>
-        <data id="build_Community-Point-Observation2_1291704429">
+        <data id="CommunityPointObservation">
           <StartTime/>
           <EndTime/>
           <DeviceID/>
