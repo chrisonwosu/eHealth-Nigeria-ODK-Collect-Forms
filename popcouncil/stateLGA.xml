@@ -1,0 +1,608 @@
+    <select1 ref="State">
+      <label>Name of State</label>
+      <hint></hint>
+      <item>
+        <label>Lagos</label>
+        <value>Lagos</value>
+      </item>
+      <item>
+        <label>Kaduna</label>
+        <value>Kaduna</value>
+      </item>
+      <item>
+        <label>Kano</label>
+        <value>Kano</value>
+      </item>
+      <item>
+        <label>Ogun</label>
+        <value>Ogun</value>
+      </item>
+    </select1>
+    <select1 ref="LagosLGA">
+      <label>Local Government Area (LGA)</label>
+      <hint>In which LGA is the Facility located?</hint>
+      <item>
+        <label>Agbado/Oke-Odo</label>
+        <value>Agbado/Oke-Odo</value>
+      </item>
+      <item>
+        <label>Agboyi/Ketu</label>
+        <value>Agboyi/Ketu</value>
+      </item>
+      <item>
+        <label>Agege</label>
+        <value>Agege</value>
+      </item>
+      <item>
+        <label>Ajeromi LGA</label>
+        <value>Ajeromi LGA</value>
+      </item>
+      <item>
+        <label>Alimosho</label>
+        <value>Alimosho</value>
+      </item>
+      <item>
+        <label>Apapa</label>
+        <value>Apapa</value>
+      </item>
+      <item>
+        <label>Apapa-Iganmu</label>
+        <value>Apapa-Iganmu</value>
+      </item>
+      <item>
+        <label>Ayobo/Ipaja</label>
+        <value>Ayobo/Ipaja</value>
+      </item>
+      <item>
+        <label>Badagry West</label>
+        <value>Badagry West</value>
+      </item>
+      <item>
+        <label>Badagry</label>
+        <value>Badagry</value>
+      </item>
+      <item>
+        <label>Bariga</label>
+        <value>Bariga</value>
+      </item>
+      <item>
+        <label>Coker Aguda</label>
+        <value>Coker Aguda</value>
+      </item>
+      <item>
+        <label>Egbe Idimu</label>
+        <value>Egbe Idimu</value>
+      </item>
+      <item>
+        <label>Ejigbo</label>
+        <value>Ejigbo</value>
+      </item>
+      <item>
+        <label>Epe</label>
+        <value>Epe</value>
+      </item>
+      <item>
+        <label>Eredo</label>
+        <value>Eredo</value>
+      </item>
+      <item>
+        <label>Eti Osa East</label>
+        <value>Eti Osa East</value>
+      </item>
+      <item>
+        <label>Eti Osa West</label>
+        <value>Eti Osa West</value>
+      </item>
+      <item>
+        <label>Iba</label>
+        <value>Iba</value>
+      </item>
+      <item>
+        <label>Isolo</label>
+        <value>Isolo</value>
+      </item>
+      <item>
+        <label>Imota</label>
+        <value>Imota</value>
+      </item>
+      <item>
+        <label>Ikoyi</label>
+        <value>Ikoyi</value>
+      </item>
+      <item>
+        <label>Ibeju</label>
+        <value>Ibeju</value>
+      </item>
+      <item>
+        <label>Ifako Ijaiye</label>
+        <value>Ifako Ijaiye</value>
+      </item>
+      <item>
+        <label>Ifelodun</label>
+        <value>Ifelodun</value>
+      </item>
+      <item>
+        <label>Igando/Ikotun</label>
+        <value>Igando/Ikotun</value>
+      </item>
+      <item>
+        <label>Igbogbo/Bayeku</label>
+        <value>Igbogbo/Bayeku</value>
+      </item>
+      <item>
+        <label>Ijede</label>
+        <value>Ijede</value>
+      </item>
+      <item>
+        <label>Ikeja</label>
+        <value>Ikeja</value>
+      </item>
+      <item>
+        <label>Ikorodu North</label>
+        <value>Ikorodu North</value>
+      </item>
+      <item>
+        <label>Ikorodu West</label>
+        <value>Ikorodu West</value>
+      </item>
+      <item>
+        <label>Ikosi Ejinrin</label>
+        <value>Ikosi Ejinrin</value>
+      </item>
+      <item>
+        <label>Ikorodu</label>
+        <value>Ikorodu</value>
+      </item>
+      <item>
+        <label>Iru/Victoria Island</label>
+        <value>Iru/Victoria Island</value>
+      </item>
+      <item>
+        <label>Itire Ikate</label>
+        <value>Itire Ikate</value>
+      </item>
+      <item>
+        <label>Kosofe</label>
+        <value>Kosofe</value>
+      </item>
+      <item>
+        <label>Lagos Island West</label>
+        <value>Lagos Island West</value>
+      </item>
+      <item>
+        <label>Lagos Island East</label>
+        <value>Lagos Island East</value>
+      </item>
+      <item>
+        <label>Lagos Mainland</label>
+        <value>Lagos Mainland</value>
+      </item>
+      <item>
+        <label>Lekki</label>
+        <value>Lekki</value>
+      </item>
+      <item>
+        <label>Mosan/Okunola</label>
+        <value>Mosan/Okunola</value>
+      </item>
+      <item>
+        <label>Mushin</label>
+        <value>Mushin</value>
+      </item>
+      <item>
+        <label>Odi Olowo/Ojuwoye</label>
+        <value>Odi Olowo/Ojuwoye</value>
+      </item>
+      <item>
+        <label>Ojo</label>
+        <value>Ojo</value>
+      </item>
+      <item>
+        <label>Ojodu</label>
+        <value>Ojodu</value>
+      </item>
+      <item>
+        <label>Ojokoro</label>
+        <value>Ojokoro</value>
+      </item>
+      <item>
+        <label>Olorunda</label>
+        <value>Olorunda</value>
+      </item>
+      <item>
+        <label>Onigbongbo</label>
+        <value>Onigbongbo</value>
+      </item>
+      <item>
+        <label>Oriade</label>
+        <value>Oriade</value>
+      </item>
+      <item>
+        <label>Orile Agege</label>
+        <value>Orile Agege</value>
+      </item>
+      <item>
+        <label>Oshodi</label>
+        <value>Oshodi</value>
+      </item>
+      <item>
+        <label>Oto-Awori</label>
+        <value>Oto-Awori</value>
+      </item>
+      <item>
+        <label>Shomolu</label>
+        <value>Shomolu</value>
+      </item>
+      <item>
+        <label>Surulere</label>
+        <value>Surulere</value>
+      </item>
+      <item>
+        <label>Yaba</label>
+        <value>Yaba</value>
+      </item>
+      <item>
+        <label>Ikorodu West</label>
+        <value>Ikorodu West</value>
+      </item>
+    </select1>
+    <select1 ref="KadunaLGA">
+      <label>Local Government Area (LGA)</label>
+      <hint>In which LGA is the Facility located?</hint>
+      <item>
+        <label>Birnin Gwari</label>
+        <value>Birnin Gwari</value>
+      </item>
+      <item>
+        <label>Chikun</label>
+        <value>Chikun</value>
+      </item>
+      <item>
+        <label>Giwa</label>
+        <value>Giwa</value>
+      </item>
+      <item>
+        <label>Igabi</label>
+        <value>Igabi</value>
+      </item>
+      <item>
+        <label>Ikara</label>
+        <value>Ikara</value>
+      </item>
+      <item>
+        <label>Jaba</label>
+        <value>Jaba</value>
+      </item>
+      <item>
+        <label>Jema'a</label>
+        <value>Jema'a</value>
+      </item>
+      <item>
+        <label>Kachia</label>
+        <value>Kachia</value>
+      </item>
+      <item>
+        <label>Kaduna North</label>
+        <value>Kaduna North</value>
+      </item>
+      <item>
+        <label>Kaduna South</label>
+        <value>Kaduna South</value>
+      </item>
+      <item>
+        <label>Kagarko</label>
+        <value>Kagarko</value>
+      </item>
+      <item>
+        <label>Kajuru</label>
+        <value>Kajuru</value>
+      </item>
+      <item>
+        <label>Kaura</label>
+        <value>Kaura</value>
+      </item>
+      <item>
+        <label>Kauru</label>
+        <value>Kauru</value>
+      </item>
+      <item>
+        <label>Kubau</label>
+        <value>Kubau</value>
+      </item>
+      <item>
+        <label>Kudan</label>
+        <value>Kudan</value>
+      </item>
+      <item>
+        <label>Lere</label>
+        <value>Lere</value>
+      </item>
+      <item>
+        <label>Makarfi</label>
+        <value>Makarfi</value>
+      </item>
+      <item>
+        <label>Sabon Gari</label>
+        <value>Sabon Gari</value>
+      </item>
+      <item>
+        <label>Sanga</label>
+        <value>Sanga</value>
+      </item>
+      <item>
+        <label>Soba</label>
+        <value>Soba</value>
+      </item>
+      <item>
+        <label>Zangon Kataf</label>
+        <value>Zangon Kataf</value>
+      </item>
+      <item>
+        <label>Zaria</label>
+        <value>Zaria</value>
+      </item>     
+    </select1>
+    <select1 ref="KanoLGA">
+      <label>Local Government Area (LGA)</label>
+      <hint>In which LGA is the Facility located?</hint>
+      <item>
+        <label>Ajingi</label> 
+        <value>Ajingi</value> 
+      </item>
+      <item>
+        <label>Albasu</label> 
+        <value>Albasu</value> 
+      </item>
+      <item>
+        <label>Bagwai</label> 
+        <value>Bagwai</value> 
+      </item>
+      <item>
+        <label>Bebeji</label> 
+        <value>Bebeji</value> 
+      </item>
+      <item>
+        <label>Bichi</label> 
+        <value>Bichi</value> 
+      </item>
+      <item>
+        <label>Bunkure</label> 
+        <value>Bunkure</value> 
+      </item>
+      <item>
+        <label>Dala</label> 
+        <value>Dala</value> 
+      </item>
+      <item>
+        <label>Dambatta</label> 
+        <value>Dambatta</value> 
+      </item>
+      <item>
+        <label>Dawakin Kudu</label> 
+        <value>Dawakin Kudu</value> 
+      </item>
+      <item>
+        <label>Dawakin Tofa</label> 
+        <value>Dawakin Tofa</value> 
+      </item>
+      <item>
+        <label>Doguwa</label> 
+        <value>Doguwa</value> 
+      </item>
+      <item>
+        <label>Fagge</label> 
+        <value>Fagge</value> 
+      </item>
+      <item>
+        <label>Gabasawa</label> 
+        <value>Gabasawa</value> 
+      </item>
+      <item>
+        <label>Garko</label> 
+        <value>Garko</value> 
+      </item>
+      <item>
+        <label>Garum Mallam</label> 
+        <value>Garum Mallam</value> 
+      </item>
+      <item>
+        <label>Gaya</label> 
+        <value>Gaya</value> 
+      </item>
+      <item>
+        <label>Gezawa</label> 
+        <value>Gezawa</value> 
+      </item>
+      <item>
+        <label>Gwale</label> 
+        <value>Gwale</value> 
+      </item>
+      <item>
+        <label>Gwarzo</label> 
+        <value>Gwarzo</value> 
+      </item>
+      <item>
+        <label>Kabo</label> 
+        <value>Kabo</value> 
+      </item>
+      <item>
+        <label>Kano Municipal</label> 
+        <value>Kano Municipal</value> 
+      </item>
+      <item>
+        <label>Karaye</label> 
+        <value>Karaye</value> 
+      </item>
+      <item>
+        <label>Kibiya</label> 
+        <value>Kibiya</value> 
+      </item>
+      <item>
+        <label>Kiru</label> 
+        <value>Kiru</value> 
+      </item>
+      <item>
+        <label>Kumbotso</label> 
+        <value>Kumbotso</value> 
+      </item>
+      <item>
+        <label>Kunchi</label> 
+        <value>Kunchi</value> 
+      </item>
+      <item>
+        <label>Kura</label> 
+        <value>Kura</value> 
+      </item>
+      <item>
+        <label>Madobi</label> 
+        <value>Madobi</value> 
+      </item>
+      <item>
+        <label>Makoda</label> 
+        <value>Makoda</value> 
+      </item>
+      <item>
+        <label>Minjibir</label> 
+        <value>Minjibir</value> 
+      </item>
+      <item>
+        <label>Nasarawa</label> 
+        <value>Nasarawa</value> 
+      </item>
+      <item>
+        <label>Rano</label> 
+        <value>Rano</value> 
+      </item>
+      <item>
+        <label>Rimin Gado</label> 
+        <value>Rimin Gado</value> 
+      </item>
+      <item>
+        <label>Rogo</label> 
+        <value>Rogo</value> 
+      </item>
+      <item>
+        <label>Shanono</label> 
+        <value>Shanono</value> 
+      </item>
+      <item>
+        <label>Sumaila</label> 
+        <value>Sumaila</value> 
+      </item>
+      <item>
+        <label>Takali</label> 
+        <value>Takali</value> 
+      </item>
+      <item>
+        <label>Tarauni</label> 
+        <value>Tarauni</value> 
+      </item>
+      <item>
+        <label>Tofa</label> 
+        <value>Tofa</value> 
+      </item>
+      <item>
+        <label>Tsanyawa</label> 
+        <value>Tsanyawa</value> 
+      </item>
+      <item>
+        <label>Tudun Wada</label> 
+        <value>Tudun Wada</value> 
+      </item>
+      <item>
+        <label>Ungogo</label> 
+        <value>Ungogo</value> 
+      </item>
+      <item>
+        <label>Warawa</label> 
+        <value>Warawa</value> 
+      </item>
+      <item>
+        <label>Wudil</label> 
+        <value>Wudil</value> 
+      </item>
+    </select1>
+    <select1 ref="OgunLGA">
+      <label>Local Government Area (LGA)</label>
+      <hint>In which LGA is the Facility located?</hint>
+      <item>
+        <label>Abeokuta North</label>
+        <value>Abeokuta North</value>
+      </item>
+      <item>
+        <label>Abeokuta South</label>
+        <value>Abeokuta South</value>
+      </item>
+      <item>
+        <label>Ado-Odo/Ota</label>
+        <value>Ado-Odo/Ota</value>
+      </item>
+      <item>
+        <label>Ewekoro</label>
+        <value>Ewekoro</value>
+      </item>
+      <item>
+        <label>Ifo</label>
+        <value>Ifo</value>
+      </item>
+      <item>
+        <label>Ijebu East</label>
+        <value>Ijebu East</value>
+      </item>
+      <item>
+        <label>Ijebu North</label>
+        <value>Ijebu North</value>
+      </item>
+      <item>
+        <label>Ijebu North East</label>
+        <value>Ijebu North East</value>
+      </item>
+      <item>
+        <label>Ijebu Ode</label>
+        <value>Ijebu Ode</value>
+      </item>
+      <item>
+        <label>Ikenne</label>
+        <value>Ikenne</value>
+      </item>
+      <item>
+        <label>Imeko Afon</label>
+        <value>Imeko Afon</value>
+      </item>
+      <item>
+        <label>Ipokia</label>
+        <value>Ipokia</value>
+      </item>
+      <item>
+        <label>Obafemi Owode</label>
+        <value>Obafemi Owode</value>
+      </item>
+      <item>
+        <label>Odogbolu</label>
+        <value>Odogbolu</value>
+      </item>
+      <item>
+        <label>Odeda</label>
+        <value>Odeda</value>
+      </item>
+      <item>
+        <label>Ogun Waterside</label>
+        <value>Ogun Waterside</value>
+      </item>
+      <item>
+        <label>Remo North</label>
+        <value>Remo North</value>
+      </item>
+      <item>
+        <label>Sagamu or Shagamu</label>
+        <value>Sagamu</value>
+      </item>
+      <item>
+        <label>Yewa North formerly Egbado North</label>
+        <value>Yewa North</value>
+      </item>
+      <item>
+        <label>Yewa South formerly Egbado South</label>
+        <value>Yewa South</value>
+      </item>
+    </select1>
