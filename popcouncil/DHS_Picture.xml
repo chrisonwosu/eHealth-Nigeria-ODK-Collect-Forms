@@ -1,0 +1,49 @@
+<h:html xmlns="http://www.w3.org/2002/xforms" 
+	xmlns:h="http://www.w3.org/1999/xhtml" 
+	xmlns:ev="http://www.w3.org/2001/xml-events" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	xmlns:jr="http://openrosa.org/javarosa">
+  <h:head>
+    <h:title>DHS Picture</h:title>
+    <model>
+      <instance>
+        <data id="DHS_1298498228">
+
+          <StartTime/>
+          <EndTime/>
+          <DeviceID/>
+          <WomanName/>
+	  <Picture/>
+          <GPSLocal/>
+        </data>
+      </instance>
+
+      <bind nodeset="/data/StartTime" type="dateTime" jr:preload="timestamp" jr:preloadParams="start"/>
+      <bind nodeset="/data/EndTime" type="dateTime" jr:preload="timestamp" jr:preloadParams="end"/>
+      <bind nodeset="/data/DeviceID" type="string" jr:preload="property" jr:preloadParams="deviceid"/>
+      <bind nodeset="/data/WomanName" type="string"/>
+      <bind nodeset="/data/Picture" type="binary"/>
+      <bind nodeset="/data/GPSLocal" type="geopoint"/>
+
+    </model>
+  </h:head>
+
+  <h:body>
+    <input ref="WomanName">
+      <label>Woman's Name</label>
+      <hint>Write the first and last name of the woman</hint>
+    </input>
+
+    <upload ref="/data/Picture" mediatype="image/*">
+      <label>Woman's Picture</label>
+    </upload>
+
+    <input ref="GPSLocal">
+      <label>GPS Location</label>
+      <hint>Take the GPS Location</hint>
+    </input>
+
+
+
+  </h:body>
+</h:html>

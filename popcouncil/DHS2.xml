@@ -1,0 +1,1194 @@
+<h:html xmlns="http://www.w3.org/2002/xforms" 
+	xmlns:h="http://www.w3.org/1999/xhtml" 
+	xmlns:ev="http://www.w3.org/2001/xml-events" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	xmlns:jr="http://openrosa.org/javarosa">
+  <h:head>
+    <h:title>DHS-2</h:title>
+    <model>
+      <instance>
+        <data id="DHS_1298498227">
+
+          <StartTime/>
+          <EndTime/>
+          <DeviceID/>
+          <GPSLocal/>
+          <PlaceName/>
+          <HouseHead/>
+          <WomanName/>
+          <InterviewerName/>
+          <Result/>
+          <Age/>
+          <AgeMenstral/>
+          <AgeMarried/>
+          <School/>
+          <SchoolLevel/>
+          <SchoolCompleted/>
+	  <Trade/>
+	  <Income/>
+	  <HusbandSchool/>
+
+          <PastBirths/>
+          <AgePreg/>
+          <EverDeliver/>
+          <AgeDeliver/>
+          <NoPregnant/>
+          <LiveBirth/>
+          <LiveMale/>
+          <LiveFemale/>
+	  <ChildrenAlive/>
+	  <SonsAlive/>
+	  <DaughtersAlive/>
+          <Miscarriage/>
+          <NoMiscarriages/>
+          <Preterm/>
+          <NoPreterm/>
+          <SignLife/>
+          <NoStillbirth/>
+          <CryDied/>
+          <DeathDay1/>
+          <DeathDay7/>
+          <DeathDay28/>
+	  <ChildComplication/>
+
+          <Pregnant/>
+          <MonthsPregnant/>
+          <LastPreg/>
+	  <Anc/>
+	  <NoAnc/>
+	  <AncLocal/>
+	  <WhoAnc/>
+          <Birth2Months/>
+          <BirthLocal/>
+          <BirthAssistance/>
+          <BirthType/>
+          <LastComplication/>
+          <TypeComplication/>
+	  <Misoprostol/>
+          <Transported/>
+          <CheckAfterBirth/>
+          <CheckHealth/>
+          <WhoChecked/>
+
+          <CheckBaby/>
+          <WhoCheckBaby/>
+          <BabyCheckLocal/>
+	  <PerformBaby/>
+          <BreastFeed/>
+          <TimeToBreast/>
+          <Milk/>
+	  <Immunizations/>
+
+	  <NoChildrenWant/>
+	  <NoBoysWant/>
+	  <NoGirlsWant/>
+
+          <SistersAge15/>
+          <SistersAlive/>
+          <SistersDead/>
+          <SistersDeadMM/>
+
+	  <HHOwnCell/>
+	  <OwnCell/>
+	  <Credit/>
+	  <MakeCalls/>
+	  <SendSMS/>
+        </data>
+      </instance>
+
+      <bind nodeset="/data/StartTime" type="dateTime" jr:preload="timestamp" jr:preloadParams="start"/>
+      <bind nodeset="/data/EndTime" type="dateTime" jr:preload="timestamp" jr:preloadParams="end"/>
+      <bind nodeset="/data/DeviceID" type="string" jr:preload="property" jr:preloadParams="deviceid"/>
+      <bind nodeset="/data/GPSLocal" type="geopoint"/>
+      <bind nodeset="/data/PlaceName" type="string"/>
+      <bind nodeset="/data/HouseHead" type="string"/>
+      <bind nodeset="/data/WomanName" type="string"/>
+      <bind nodeset="/data/InterviewerName" type="string"/>
+      <bind nodeset="/data/Result" type="select1"/>
+      <bind nodeset="/data/Age" type="int" relevant="/data/Result!='refused' and /data/Result!='NotHome'" constraint=". &gt;= 0 and . &lt; 120"/>
+      <bind nodeset="/data/AgeMenstral" type="int" relevant="/data/Result!='refused' and /data/Result!='NotHome'" constraint=". &gt;= 0 and . &lt; 30"/>
+      <bind nodeset="/data/AgeMarried" type="int" relevant="/data/Result!='refused' and /data/Result!='NotHome'"/>
+      <bind nodeset="/data/School" type="select1" relevant="/data/Result!='refused' and /data/Result!='NotHome'"/>
+      <bind nodeset="/data/SchoolLevel" type="select" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/School='Y'"/>
+      <bind nodeset="/data/SchoolCompleted" type="int" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/School='Y'"/>
+      <bind nodeset="/data/Trade" type="string" relevant="/data/Result!='refused' and /data/Result!='NotHome'"/>
+      <bind nodeset="/data/Income" type="Int" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/Trade='Y'"/>
+      <bind nodeset="/data/HusbandSchool" type="select" relevant="/data/Result!='refused' and /data/Result!='NotHome'"/>
+
+      <bind nodeset="/data/PastBirths" type="select1" relevant="/data/Result!='refused' and /data/Result!='NotHome'"/>
+      <bind nodeset="/data/AgePreg" type="int" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y'"/>
+      <bind nodeset="/data/EverDeliver" type="select1" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y'"/>
+      <bind nodeset="/data/AgeDeliver" type="int" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/EverDeliver='Y'"/>
+      <bind nodeset="/data/NoPregnant" type="int" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y'"/>
+      <bind nodeset="/data/LiveBirth" type="int" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y'"/>
+      <bind nodeset="/data/LiveMale" type="int" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/LiveBirth > 0"/>
+      <bind nodeset="/data/LiveFemale" type="int" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y'"/>
+      <bind nodeset="/data/ChildrenAlive" type="select1" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/EverDeliver='Y'"/>
+      <bind nodeset="/data/SonsAlive" type="int" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/EverDeliver='Y' and /data/ChildrenAlive='Y'"/>
+      <bind nodeset="/data/DaughtersAlive" type="int" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/EverDeliver='Y' and /data/ChildrenAlive='Y'"/>
+      <bind nodeset="/data/Miscarriage" type="select1" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y'"/>
+      <bind nodeset="/data/NoMiscarriages" type="int" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/Miscarriage='Y'"/>
+      <bind nodeset="/data/Preterm" type="select1" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y'"/>
+      <bind nodeset="/data/NoPreterm" type="int" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/Preterm='Y'"/>
+      <bind nodeset="/data/SignLife" type="select1" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y'"/>
+      <bind nodeset="/data/NoStillbirth" type="int" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/SignLife='Y'"/>
+      <bind nodeset="/data/CryDied" type="select1" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/EverDeliver='Y'"/>
+      <bind nodeset="/data/DeathDay1" type="int" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/EverDeliver='Y'"/>
+      <bind nodeset="/data/DeathDay7" type="int" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/EverDeliver='Y'"/>
+      <bind nodeset="/data/DeathDay28" type="int" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/EverDeliver='Y'"/>
+      <bind nodeset="/data/ChildComplication" type="select" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/EverDeliver='Y'"/>
+
+      <bind nodeset="/data/Pregnant" type="select1" relevant="/data/Result!='refused' and /data/Result!='NotHome'"/>
+      <bind nodeset="/data/MonthsPregnant" type="int" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/Pregnant='Y'"/>
+      <bind nodeset="/data/LastPreg" type="int" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y'"/>
+      <bind nodeset="/data/Anc" type="select1" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y'"/>
+      <bind nodeset="/data/NoAnc" type="int" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/Anc='Y'"/>
+      <bind nodeset="/data/AncLocal" type="select" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/Anc='Y'"/>
+      <bind nodeset="/data/WhoAnc" type="select" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/Anc='Y'"/>
+      <bind nodeset="/data/Birth2Months" type="select1" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/EverDeliver='Y'"/>
+      <bind nodeset="/data/BirthLocal" type="select1" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/EverDeliver='Y'"/>
+      <bind nodeset="/data/BirthAssistance" type="select" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/EverDeliver='Y'"/>
+      <bind nodeset="/data/BirthType" type="select1" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/EverDeliver='Y'"/>
+      <bind nodeset="/data/LastComplication" type="select1" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/EverDeliver='Y'"/>
+      <bind nodeset="/data/TypeComplication" type="select" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/EverDeliver='Y'and /data/LastComplication='Y'"/>
+      <bind nodeset="/data/Misoprostol" type="select1" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/EverDeliver='Y'"/>
+      <bind nodeset="/data/Transported" type="select1" relevant="/data/PastBirths='Y' and /data/EverDeliver='Y'"/>
+      <bind nodeset="/data/CheckAfterBirth" type="select1" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/EverDeliver='Y' and /data/BirthLocal!='YourHome' and /data/BirthLocal!='OtherHome'"/>
+      <bind nodeset="/data/CheckHealth" type="select1" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/EverDeliver='Y' and /data/BirthLocal!='YourHome' and /data/BirthLocal!='OtherHome'"/>
+      <bind nodeset="/data/WhoChecked" type="select" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/EverDeliver='Y' and /data/CheckHealth='Y'"/>
+
+      <bind nodeset="/data/CheckBaby" type="select1" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/EverDeliver='Y'"/>
+      <bind nodeset="/data/WhoCheckBaby" type="select" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/EverDeliver='Y' and /data/CheckBaby='Y'"/>
+      <bind nodeset="/data/BabyCheckLocal" type="select1" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/EverDeliver='Y' and /data/CheckBaby='Y'"/>
+      <bind nodeset="/data/PerformBaby" type="select" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/EverDeliver='Y'"/>
+      <bind nodeset="/data/BreastFeed" type="select1" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/EverDeliver='Y'"/>
+      <bind nodeset="/data/TimeToBreast" type="select1" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/EverDeliver='Y' and /data/BreastFeed='Y'"/>
+      <bind nodeset="/data/Milk" type="select" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/EverDeliver='Y'"/>
+      <bind nodeset="/data/Immunizations" type="select" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/PastBirths='Y' and /data/EverDeliver='Y'"/>
+
+      <bind nodeset="/data/NoChildrenWant" type="int" relevant="/data/Result!='refused' and /data/Result!='NotHome'"/>
+      <bind nodeset="/data/NoBoysWant" type="int" relevant="/data/Result!='refused' and /data/Result!='NotHome'"/>
+      <bind nodeset="/data/NoGirlsWant" type="int" relevant="/data/Result!='refused' and /data/Result!='NotHome'"/>
+
+      <bind nodeset="/data/SistersAge15" type="int" relevant="/data/Result!='refused' and /data/Result!='NotHome'"/>
+      <bind nodeset="/data/SistersAlive" type="int" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/SistersAge15 > 0"/>
+      <bind nodeset="/data/SistersDead" type="int" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/SistersAge15 > 0"/>
+      <bind nodeset="/data/SistersDeadMM" type="int" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/SistersAge15 > 0"/>
+
+      <bind nodeset="/data/HHOwnCell" type="select1" relevant="/data/Result!='refused' and /data/Result!='NotHome'"/>
+      <bind nodeset="/data/OwnCell" type="select1" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/HHOwnCell='Y'"/>
+      <bind nodeset="/data/Credit" type="select1" relevant="/data/Result!='refused' and /data/Result!='NotHome'" relevant="/data/OwnCell='Y'"/>
+      <bind nodeset="/data/MakeCalls" type="select1" relevant="/data/Result!='refused' and /data/Result!='NotHome'"/>
+      <bind nodeset="/data/SendSMS" type="select1" relevant="/data/Result!='refused' and /data/Result!='NotHome'"/>
+
+
+
+    </model>
+  </h:head>
+
+  <h:body>
+    <input ref="GPSLocal">
+      <label>GPS Location</label>
+      <hint>Take the GPS Location</hint>
+    </input>
+
+    <input ref="PlaceName">
+      <label>Place Name</label>
+      <hint>What is the name of the place?</hint>
+    </input>
+
+    <input ref="HouseHead">
+      <label>Name of Household Head</label>
+      <hint>Write the name of the household head</hint>
+    </input>
+
+    <input ref="WomanName">
+      <label>Name of Woman</label>
+      <hint>Write the name of the woman you are interviewing</hint>
+    </input>
+
+    <input ref="InterviewerName">
+      <label>Interviewer's Name</label>
+      <hint>Write your name</hint>
+    </input>
+
+    <select1 ref="Result">
+      <label>Result</label>
+      <hint>What was the result of the survey</hint>
+      <item>
+        <label>Completed</label>
+	<value>complete</value>
+      </item>
+      <item>
+        <label>Not at Home</label>
+	<value>NotHome</value>
+      </item>
+      <item>
+        <label>Refused</label>
+        <value>refused</value>
+      </item>
+      <item>
+        <label>Partly Completed</label>
+        <value>partcomplete</value>
+      </item>
+      <item>
+        <label>Other</label>
+        <value>other</value>
+      </item>
+    </select1>
+
+    <input ref="Age">
+      <label>Age</label>
+      <hint>How old were you at your last birthday (estimate)?</hint>
+    </input>
+
+    <input ref="AgeMenstral">
+      <label>Age First Period</label>
+      <hint>How old were you when you first had your menstrual period?</hint>
+    </input>
+
+    <input ref="AgeMarried">
+      <label>Age Married</label>
+      <hint>How old were you when you first got married?</hint>
+    </input>
+    
+    <select1 ref="School">
+      <label>Attended School</label>
+      <hint>Have you ever attended school?</hint>
+      <item>
+        <label>Yes</label>
+        <value>Y</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>N</value>
+      </item>
+    </select1>
+
+    <select ref="SchoolLevel">
+      <label>School Level</label>
+      <hint>What is the highest level of school you attended?</hint>
+      <item>
+        <label>Koranic</label>
+        <value>koranic</value>
+      </item>
+      <item>
+        <label>Primary</label>
+        <value>primary</value>
+      </item>
+      <item>
+        <label>Secondary</label>
+        <value>secondary</value>
+      </item>
+      <item>
+        <label>Higher</label>
+        <value>higher</value>
+      </item>
+    </select>
+
+    <input ref="SchoolCompleted">
+      <label>Level Completed</label>
+      <hint>What is the highest(grade/level/form) you completed at that level?</hint>
+    </input>
+
+    <select1 ref="Trade">
+      <label>Trade</label>
+      <hint>Are you engaged in any income generating trade?</hint>
+      <item>
+        <label>Yes</label>
+        <value>Y</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>N</value>
+      </item>
+    </select1>
+
+    <input ref="Income">
+      <label>Income</label>
+      <hint>Approximately how much money do you make each week from this trade?</hint>
+    </input>
+
+    <select ref="HusbandSchool">
+      <label>Husband School Level</label>
+      <hint>What is your husbands highest level of education?</hint>
+      <item>
+        <label>Koranic</label>
+        <value>koranic</value>
+      </item>
+      <item>
+        <label>Primary</label>
+        <value>primary</value>
+      </item>
+      <item>
+        <label>Secondary</label>
+        <value>secondary</value>
+      </item>
+      <item>
+        <label>Higher</label>
+        <value>higher</value>
+      </item>
+      <item>
+        <label>None</label>
+        <value>None</value>
+      </item>
+    </select>
+
+    <select1 ref="PastBirths">
+      <label>Ever Pregnant?</label>
+      <hint>Now I would like to ask about all the pregnancies and births you have had during your life. Have you ever been pregnant?</hint>
+      <item>
+        <label>Yes</label>
+        <value>Y</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>N</value>
+      </item>
+    </select1>
+
+    <input ref="AgePreg">
+      <label>Age Pregnant</label>
+      <hint>How old were you at your first pregnancy?</hint>
+    </input>
+
+    <select1 ref="EverDeliver">
+      <label>Ever Delivered?</label>
+      <hint>Have you ever given birth?</hint>
+      <item>
+        <label>Yes</label>
+        <value>Y</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>N</value>
+      </item>
+    </select1>
+
+    <input ref="AgeDeliver">
+      <label>Age Childbirth</label>
+      <hint>How old were you at your last childbirth?</hint>
+    </input>
+
+    <input ref="NoPregnant">
+      <label>No. Pregnant</label>
+      <hint>How many times have you been pregnant?</hint>
+    </input>
+
+    <input ref="LiveBirth">
+      <label>No. Live Births</label>
+      <hint>How many of these pregnancies ended with live births?</hint>
+    </input>
+
+    <input ref="LiveMale">
+      <label>No. Live Males</label>
+      <hint>How many were live males?</hint>
+    </input>
+
+    <input ref="LiveFemale">
+      <label>No. Live Females</label>
+      <hint>How many were live females</hint>
+    </input>
+
+    <select1 ref="ChildrenAlive">
+      <label>Children Alive</label>
+      <hint>Do you have any sons or daughters to whom you have given birth who are alive now?</hint>
+      <item>
+        <label>Yes</label>
+        <value>Y</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>N</value>
+      </item>
+    </select1>
+
+    <input ref="SonsAlive">
+      <label>Sons Alive</label>
+      <hint>How many sons are alive?</hint>
+    </input>
+
+    <input ref="DaughtersAlive">
+      <label>Daughters Alive</label>
+      <hint>How many daughters are alive?</hint>
+    </input>
+
+    <select1 ref="Miscarriage">
+      <label>Miscarriage?</label>
+      <hint>Did any of your pregnancies end in miscarriage?</hint>
+      <item>
+        <label>Yes</label>
+        <value>Y</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>N</value>
+      </item>
+    </select1>
+
+    <input ref="NoMiscarriages">
+      <label>No. Miscarriages</label>
+      <hint>How many of these pregnancies ended in miscarriages?</hint>
+    </input>
+
+    <select1 ref="Preterm">
+      <label>Preterm?</label>
+      <hint>Did any of your pregnancies end in preterm delivery?</hint>
+      <item>
+        <label>Yes</label>
+        <value>Y</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>N</value>
+      </item>
+    </select1>
+
+    <input ref="NoPreterm">
+      <label>No. Preterm</label>
+      <hint>How many ended in preterm births?</hint>
+    </input>
+
+    <select1 ref="SignLife">
+      <label>No Sign of Life?</label>
+      <hint>Were there any of your pregnancies that resulted in the delivery of a newborn with no sign of life?</hint>
+      <item>
+        <label>Yes</label>
+        <value>Y</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>N</value>
+      </item>
+    </select1>
+
+    <input ref="NoStillbirth">
+      <label>No. Stillbirth</label>
+      <hint>How many ended in stillbirths?</hint>
+    </input>
+
+    <select1 ref="CryDied">
+      <label>Cried but Died?</label>
+      <hint>Have you had any baby who cried or showed signs of life but later died?</hint>
+      <item>
+        <label>Yes</label>
+        <value>Y</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>N</value>
+      </item>
+    </select1>
+
+    <input ref="DeathDay1">
+      <label>Deaths Day 1</label>
+      <hint>How many deaths in the first day of life?</hint>
+    </input>
+
+    <input ref="DeathDay7">
+      <label>Deaths Day 7</label>
+      <hint>How many deaths within 7 days of life?</hint>
+    </input>
+
+    <input ref="DeathDay28">
+      <label>Deaths Day 28</label>
+      <hint>How many deaths within 28 days of life?</hint>
+    </input>
+
+    <select ref="ChildComplication">
+      <label>Child Complication</label>
+      <hint>Did any of your children suffer any complications? Which of the following did he/she suffer from?</hint>
+      <item>
+        <label>No Complications</label>
+        <value>none</value>
+      </item>
+      <item>
+        <label>Jaundice</label>
+        <value>jaundice</value>
+      </item>
+      <item>
+        <label>Convulsions</label>
+        <value>convulsions</value>
+      </item>
+      <item>
+        <label>Failure to Cry</label>
+        <value>nocrying</value>
+      </item>
+      <item>
+        <label>Fever</label>
+        <value>fever</value>
+      </item>
+    </select>
+
+    <select1 ref="Pregnant">
+      <label>Pregnant?</label>
+      <hint>Are you pregnant now?</hint>
+      <item>
+        <label>Yes</label>
+        <value>Y</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>N</value>
+      </item>
+      <item>
+        <label>Unsure</label>
+        <value>Unsure</value>
+      </item>
+    </select1>
+
+    <input ref="MonthsPregnant">
+      <label>Months Pregnant</label>
+      <hint>How many months pregnant are you?</hint>
+    </input>
+
+    <input ref="LastPreg">
+      <label>Last Pregnancy</label>
+      <hint>How many months ago was your last pregnancy? Probe: How old is your youngest child?</hint>
+    </input>
+
+    <select1 ref="Anc">
+      <label>Attend ANC</label>
+      <hint>Did you attend ANC during your last pregnancy?</hint>
+      <item>
+        <label>Yes</label>
+        <value>Y</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>N</value>
+      </item>
+    </select1>
+
+    <input ref="NoAnc">
+      <label>No of ANC</label>
+      <hint>How many times did you receive ANC</hint>
+    </input>
+
+    <select1 ref="AncLocal">
+      <label>ANC Location</label>
+      <hint>Where did you receive ANC?</hint>
+      <item>
+        <label>Your Home</label>
+        <value>YourHome</value>
+      </item>
+      <item>
+        <label>Other Home</label>
+        <value>OtherHome</value>
+      </item>
+      <item>
+        <label>Govt. Hospital</label>
+        <value>gh</value>
+      </item>
+      <item>
+        <label>Govt. Health Center</label>
+        <value>GovtHealthClinic</value>
+      </item>
+      <item>
+        <label>Govt. Health Post</label>
+        <value>GovtHealthPost</value>
+      </item>
+      <item>
+        <label>Other public sector</label>
+        <value>OtherPublic</value>
+      </item>
+      <item>
+        <label>Private hospital/clinic</label>
+        <value>PrivateHosp</value>
+      </item>
+      <item>
+        <label>Other private medical sector</label>
+        <value>OtherPrivate</value>
+      </item>
+      <item>
+        <label>PRHI/CBS CenteringPostnatal Group</label>
+        <value>PRHI</value>
+      </item>
+    </select1>
+
+    <select ref="WhoAnc">
+      <label>ANC Personnel</label>
+      <hint>By whom did you receive ANC?</hint>
+      <item>
+        <label>Doctor</label>
+        <value>dr</value>
+      </item>
+      <item>
+        <label>Nurse/midwife</label>
+        <value>nurse</value>
+      </item>
+      <item>
+        <label>Auxillary Midwife</label>
+        <value>midwife</value>
+      </item>
+      <item>
+        <label>Traditional Birth Attendant</label>
+        <value>tba</value>
+      </item>
+      <item>
+        <label>Community/Village Health worker</label>
+        <value>CHW</value>
+      </item>
+      <item>
+        <label>Unsure/unknown</label>
+        <value>unsure</value>
+      </item>
+    </select>
+
+    <select1 ref="Birth2Months">
+      <label>Birth Past 2 Months</label>
+      <hint>Have you given birth within the last 2 months</hint>
+      <item>
+        <label>Yes</label>
+        <value>Y</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>N</value>
+      </item>
+    </select1>
+
+    <select1 ref="BirthLocal">
+      <label>Birth Local</label>
+      <hint>Where did you give birth</hint>
+      <item>
+        <label>Your Home</label>
+        <value>YourHome</value>
+      </item>
+      <item>
+        <label>Other Home</label>
+        <value>OtherHome</value>
+      </item>
+      <item>
+        <label>Govt. Hospital</label>
+        <value>gh</value>
+      </item>
+      <item>
+        <label>Govt. Health Center</label>
+        <value>GovtHealthClinic</value>
+      </item>
+      <item>
+        <label>Govt. Health Post</label>
+        <value>GovtHealthPost</value>
+      </item>
+      <item>
+        <label>Other public sector</label>
+        <value>OtherPublic</value>
+      </item>
+      <item>
+        <label>Private hospital/clinic</label>
+        <value>PrivateHosp</value>
+      </item>
+      <item>
+        <label>Other private medical sector</label>
+        <value>OtherPrivate</value>
+      </item>
+    </select1>
+
+    <select ref="BirthAssistance">
+      <label>Birth Assistance</label>
+      <hint>Who assisted you with the delivery of your last baby?</hint>
+      <item>
+        <label>Doctor</label>
+        <value>dr</value>
+      </item>
+      <item>
+        <label>Nurse/midwife</label>
+        <value>nurse</value>
+      </item>
+      <item>
+        <label>Auxillary Midwife</label>
+        <value>midwife</value>
+      </item>
+      <item>
+        <label>Traditional Birth Attendant</label>
+        <value>tba</value>
+      </item>
+      <item>
+        <label>Community/Village Health worker</label>
+        <value>CHW</value>
+      </item>
+      <item>
+        <label>Relative/friend/Co-wife</label>
+        <value>friend</value>
+      </item>
+      <item>
+        <label>No one</label>
+        <value>none</value>
+      </item>
+    </select>
+
+    <select1 ref="BirthType">
+      <label>Birth Type</label>
+      <hint>How were you delivered during your last delivery?</hint>
+      <item>
+        <label>Spontaneous Vaginal Delivery</label>
+        <value>spontaneous</value>
+      </item>
+      <item>
+        <label>Assisted Vaginal Delivery</label>
+        <value>assisted</value>
+      </item>
+      <item>
+        <label>Cesarean Section</label>
+        <value>cesarean</value>
+      </item>
+    </select1>
+
+    <select1 ref="LastComplication">
+      <label>Complication</label>
+      <hint>Did you have any complication/s during your last pregnancy and childbirth?</hint>
+      <item>
+        <label>Yes</label>
+        <value>Y</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>N</value>
+      </item>
+    </select1>
+
+    <select ref="TypeComplication">
+      <label>Complication Type</label>
+      <hint>Which of the following complications did you experience?</hint>
+      <item>
+        <label>High Blood Pressure</label>
+        <value>highbp</value>
+      </item>
+      <item>
+        <label>Severe Headache</label>
+        <value>headache</value>
+      </item>
+      <item>
+        <label>Swelling of hands and feet</label>
+        <value>swelling</value>
+      </item>
+      <item>
+        <label>Convulsions during pregnancy</label>
+        <value>ConvulsionsPreg</value>
+      </item>
+      <item>
+        <label>Convulsions during labour</label>
+        <value>ConvulsionsLabour</value>
+      </item>
+      <item>
+        <label>Convulsions after childbirth</label>
+        <value>ConvulsionsAfter</value>
+      </item>
+      <item>
+        <label>Excessive bleeding before delivery of baby</label>
+        <value>BleedingBefore</value>
+      </item>
+      <item>
+        <label>Excessive bleeding after delivery of the baby</label>
+        <value>BleedingAfter</value>
+      </item>
+      <item>
+        <label>Pre-tem labour</label>
+        <value>Preterm</value>
+      </item>
+      <item>
+        <label>Prolonged labour</label>
+        <value>Prolonged</value>
+      </item>
+      <item>
+        <label>High body temperature within the first 42 days after delivery</label>
+        <value>HighTemp</value>
+      </item>
+    </select>
+
+    <select1 ref="Misoprostol">
+      <label>Misoprostol</label>
+      <hint>Did you take misoprostol after the delivery of your child?</hint>
+      <item>
+        <label>Yes</label>
+        <value>Y</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>N</value>
+      </item>
+    </select1>
+
+    <select1 ref="Transported">
+      <label>Transported to Hospital</label>
+      <hint>Were you transported to a health centre or hospital</hint>
+      <item>
+        <label>Yes</label>
+        <value>Y</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>N</value>
+      </item>
+    </select1>
+
+    <select1 ref="CheckAfterBirth">
+      <label>Check After Birth</label>
+      <hint>After you gave birth, did anyone check on your health while you were still in the facility?</hint>
+      <item>
+        <label>Yes</label>
+        <value>Y</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>N</value>
+      </item>
+    </select1>
+
+    <select1 ref="CheckHealth">
+      <label>Check After Left</label>
+      <hint>Did anyone check on your health after you left the facility?</hint>
+      <item>
+        <label>Yes</label>
+        <value>Y</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>N</value>
+      </item>
+    </select1>
+
+    <select ref="WhoChecked">
+      <label>Who Checked</label>
+      <hint>Who checked on your health at that  time?</hint>
+      <item>
+        <label>Doctor</label>
+        <value>dr</value>
+      </item>
+      <item>
+        <label>Nurse/midwife</label>
+        <value>nurse</value>
+      </item>
+      <item>
+        <label>Auxillary Midwife</label>
+        <value>midwife</value>
+      </item>
+      <item>
+        <label>Traditional Birth Attendant</label>
+        <value>tba</value>
+      </item>
+      <item>
+        <label>Community/Village Health worker</label>
+        <value>CHW</value>
+      </item>
+    </select>
+
+    <select1 ref="CheckBaby">
+      <label>Checked Baby</label>
+      <hint>In the two months after the delivery of your child, did any health care provider or a traditional birth attendant check on his/her health? </hint>
+      <item>
+        <label>Yes</label>
+        <value>Y</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>N</value>
+      </item>
+    </select1>
+
+    <select ref="WhoCheckBaby">
+      <label>Who Checked Baby</label>
+      <hint>Who checked on him/ or her? </hint>
+      <item>
+        <label>Doctor</label>
+        <value>dr</value>
+      </item>
+      <item>
+        <label>Nurse/midwife</label>
+        <value>nurse</value>
+      </item>
+      <item>
+        <label>Auxillary Midwife</label>
+        <value>midwife</value>
+      </item>
+      <item>
+        <label>Traditional Birth Attendant</label>
+        <value>tba</value>
+      </item>
+      <item>
+        <label>Community/Village Health worker</label>
+        <value>CHW</value>
+      </item>
+      <item>
+        <label>PRHI/CBS CenteringPostnatal Group</label>
+        <value>PRHI</value>
+      </item>
+      <item>
+        <label>Unsure/Unknown</label>
+        <value>unsure</value>
+      </item>
+    </select>
+
+    <select1 ref="BabyCheckLocal">
+      <label>Baby Check Local</label>
+      <hint>Where did the first check take place?</hint>
+      <item>
+        <label>Your Home</label>
+        <value>YourHome</value>
+      </item>
+      <item>
+        <label>Other Home</label>
+        <value>OtherHome</value>
+      </item>
+      <item>
+        <label>Govt. Hospital</label>
+        <value>gh</value>
+      </item>
+      <item>
+        <label>Govt. Health Center</label>
+        <value>GovtHealthClinic</value>
+      </item>
+      <item>
+        <label>Govt. Health Post</label>
+        <value>GovtHealthPost</value>
+      </item>
+      <item>
+        <label>Other public sector</label>
+        <value>OtherPublic</value>
+      </item>
+      <item>
+        <label>Private hospital/clinic</label>
+        <value>PrivateHosp</value>
+      </item>
+      <item>
+        <label>Other private medical sector</label>
+        <value>OtherPrivate</value>
+      </item>
+      <item>
+        <label>PRHI/CBS CenteringPostnatal Group</label>
+        <value>PRHI</value>
+      </item>
+    </select1>
+
+    <select ref="PerformBaby">
+      <label>Perform on Baby</label>
+      <hint>Did you perform any of the following on your last baby?</hint>
+      <item>
+        <label>Uvulectomy</label>
+        <value>uvulectomy</value>
+      </item>
+      <item>
+        <label>Female Circumcision</label>
+        <value>FGM</value>
+      </item>
+      <item>
+        <label>Tribal marks/Scarification</label>
+        <value>scarification</value>
+      </item>
+      <item>
+        <label>None</label>
+        <value>none</value>
+      </item>
+    </select>
+
+    <select1 ref="BreastFeed">
+      <label>Breastfeed</label>
+      <hint>Did you ever breast feed your baby? </hint>
+      <item>
+        <label>Yes</label>
+        <value>Y</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>N</value>
+      </item>
+    </select1>
+
+    <select1 ref="TimeToBreast">
+      <label>Time to breast</label>
+      <hint>How long after birth did you first put him to the breast?</hint>
+      <item>
+        <label>Immediately</label>
+        <value>i</value>
+      </item>
+      <item>
+        <label>Hours</label>
+        <value>h</value>
+      </item>
+      <item>
+        <label>Days</label>
+        <value>d</value>
+      </item>
+    </select1>
+
+    <select ref="Milk">
+      <label>Baby drink other?</label>
+      <hint>In the first three days after delivery, were any of the following given to the baby to drink?</hint>
+      <item>
+        <label>Milk (other than breast milk)</label>
+        <value>OtherMilk</value>
+      </item>
+      <item>
+        <label>Plain water</label>
+        <value>h2o</value>
+      </item>
+      <item>
+        <label>sugar or gluscose water</label>
+        <value>sugar</value>
+      </item>
+      <item>
+        <label>Gripe water</label>
+        <value>gripe</value>
+      </item>
+      <item>
+        <label>Gargajiya</label>
+        <value>gargajiya</value>
+      </item>
+      <item>
+        <label>Traditional Herbs</label>
+        <value>herbs</value>
+      </item>
+      <item>
+        <label>Infant formula</label>
+        <value>formula</value>
+      </item>
+      <item>
+        <label>Dates</label>
+        <value>dates</value>
+      </item>
+      <item>
+        <label>Honey</label>
+        <value>honey</value>
+      </item>
+      <item>
+        <label>Others</label>
+        <value>other</value>
+      </item>
+      <item>
+        <label>None</label>
+        <value>none</value>
+      </item>
+    </select>
+
+    <select ref="Immunizations">
+      <label>Immunizations</label>
+      <hint>Which of the following immunizations did your last baby receive?</hint>
+      <item>
+        <label>No Immunizations</label>
+        <value>none</value>
+      </item>
+      <item>
+        <label>BCG</label>
+        <value>BCG</value>
+      </item>
+      <item>
+        <label>DPT</label>
+        <value>DPT</value>
+      </item>
+      <item>
+        <label>OPV</label>
+        <value>OPV</value>
+      </item>
+      <item>
+        <label>Measles</label>
+        <value>measles</value>
+      </item>
+      <item>
+        <label>Yellow Fever</label>
+        <value>YF</value>
+      </item>
+    </select>
+
+    <input ref="NoChildrenWant">
+      <label>Number of Children Wanted</label>
+      <hint>How many children would you like to have?</hint>
+    </input>
+
+    <input ref="NoBoysWant">
+      <label>Number of Boys Wanted</label>
+      <hint>How many boys would you like to have?</hint>
+    </input>
+
+    <input ref="NoGirlsWant">
+      <label>Number of Girls Wanted</label>
+      <hint>How many girls would you like to have?</hint>
+    </input>
+
+    <input ref="SistersAge15">
+      <label>No. Sister Age 15</label>
+      <hint>How many sisters have you ever had who have reached aged 15?</hint>
+    </input>
+
+    <input ref="SistersAlive">
+      <label>No. Sisters Alive</label>
+      <hint>How many of these sisters are alive now?</hint>
+    </input>
+
+    <input ref="SistersDead">
+      <label>No. Sisters Dead</label>
+      <hint>How many of these sisters are dead?</hint>
+    </input>
+
+    <input ref="SistersDeadMM">
+      <label>No. Died due to MMC</label>
+      <hint>How many of these sisters died during pregnancy, childbirth, or during the 6 weeks after the end of pregnancy?</hint>
+    </input>
+
+    <select1 ref="HHOwnCell">
+      <label>House Hold Phone</label>
+      <hint>Does anyone in your household own a mobile phone?</hint>
+      <item>
+        <label>Yes</label>
+        <value>Y</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>N</value>
+      </item>
+    </select1>
+
+    <select1 ref="OwnCell">
+      <label>You Own Cell</label>
+      <hint>Do you own a mobile phone?</hint>
+      <item>
+        <label>Yes</label>
+        <value>Y</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>N</value>
+      </item>
+    </select1>
+
+    <select1 ref="Credit">
+      <label>Credit on Cell</label>
+      <hint>Does the phone currently have credit?</hint>
+      <item>
+        <label>Yes</label>
+        <value>Y</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>N</value>
+      </item>
+    </select1>
+
+    <select1 ref="MakeCalls">
+      <label>Make Calls on Cell</label>
+      <hint>Do you know how to make a call on a cellphone?</hint>
+      <item>
+        <label>Yes</label>
+        <value>Y</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>N</value>
+      </item>
+    </select1>
+
+    <select1 ref="SendSMS">
+      <label>Send SMS on Cell</label>
+      <hint>Do you know how to send a SMS on a cellphone?</hint>
+      <item>
+        <label>Yes</label>
+        <value>Y</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>N</value>
+      </item>
+    </select1>
+
+  </h:body>
+</h:html>
